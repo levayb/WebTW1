@@ -7,10 +7,14 @@
 <h1>Login / Register ide</h1>
 <center>
     <h2>Ez itt a register</h2>
-    <form action="/account" method="post">
+    <form action="account" method="post">
         <br/>Username:<input type="text" name="username">
         <br/>Password:<input type="password" name="password">
         <br/>E-mail:<input type="email" name="email">
+        <br/><select name="selection">
+        <option value="false">Student</option>
+        <option value="true">Mentor</option>
+        </select>
         <br/><input type="submit" value="Submit">
     </form>
 </center>
