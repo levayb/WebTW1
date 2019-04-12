@@ -7,11 +7,22 @@ import java.util.List;
 
 public class AccountService {
 
-    private List<Account> accountList = new ArrayList<>();
+    private List<Account> accounts;
+    private static AccountService ourInstance = new AccountService();
 
-    public void addAccount(Account acc){accountList.add(acc);}
+    public static AccountService getInstance() {
+        return ourInstance;
+    }
 
-    public List<Account> getAccountList() {
-        return accountList;
+    private AccountService() {
+        accounts = new ArrayList<>();
+    }
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void addAccount(Account acc) {
+        accounts.add(acc);
     }
 }

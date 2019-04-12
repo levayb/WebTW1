@@ -2,6 +2,7 @@ package com.codecool.web.servlet;
 
 import com.codecool.web.model.Account;
 import com.codecool.web.service.AccountService;
+import com.codecool.web.service.AccountServiceOld;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,7 +13,7 @@ import java.io.IOException;
 
 @WebServlet("/logincheck")
 public class LoginServlet extends HttpServlet {
-    private final AccountService service = new AccountService();
+    public AccountService service = AccountService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,15 +25,14 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        for (Account acc: service.getAccountList()) {
+        for (Account acc: service.getAccounts()) {
             if(acc.getUsername().equalsIgnoreCase(username)){
                 if(acc.getPassword().equalsIgnoreCase(password)){
-                    resp.sendRedirect("Home.jsp");
+                    resp.sendRedirect("home.html");
                 }
-            }else{
+            }else {
                 resp.sendRedirect("index.html");
             }
-
         }
     }
 }
