@@ -1,3 +1,4 @@
+<%@ page import="com.codecool.web.model.Account" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
@@ -9,7 +10,7 @@
         String username=request.getParameter("username");
         String password=request.getParameter("password");
 
-        Account acc = new Account(username, password, false, "fasz@hotmail.com")
+        Account acc = new Account(username, password, false, "fasz@hotmail.com");
 
         if((username.equals("admin") && password.equals("admin")))
             {

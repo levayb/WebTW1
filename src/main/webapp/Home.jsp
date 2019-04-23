@@ -7,7 +7,7 @@
     </head>
     <body>
         <br/><br/><br/><br/><br/>
-        <center>
+        <div style="text-align: center;">
             <h2>
             <%
             String a=session.getAttribute("username").toString();
@@ -18,7 +18,7 @@
             <br/>
             <br/><br/><br/><br/><br/>
         <a href="logout.jsp">Logout</a>
-        </center>
+        </div>
 
     </body>
 </html>
