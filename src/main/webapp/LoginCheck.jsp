@@ -1,12 +1,12 @@
 <%@ page import="com.codecool.web.model.Account" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<html>
-    <head>
+  <%@page contentType="text/html" pageEncoding="UTF-8"%>
+    <html>
+      <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Ez itt a login checker</title>
-    </head>
-    <body>
-        <%
+          <title>Ez itt a login checker</title>
+        </head>
+        <body>
+          <%
         String username=request.getParameter("username");
         String password=request.getParameter("password");
 
@@ -20,5 +20,5 @@
         else
             response.sendRedirect("Error.jsp");
         %>
-    </body>
-</html>
+          </body>
+        </html>
