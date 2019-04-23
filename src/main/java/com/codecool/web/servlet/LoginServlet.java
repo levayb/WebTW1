@@ -25,14 +25,18 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         String username = req.getParameter("username");
         String password = req.getParameter("password");
+        String redirectTo;
+        boolean isValid = false;
         for (Account acc: service.getAccounts()) {
-            if(acc.getUsername().equalsIgnoreCase(username)){
-                if(acc.getPassword().equalsIgnoreCase(password)){
-                    resp.sendRedirect("home.html");
-                }
-            }else {
-                resp.sendRedirect("index.html");
+            if (acc.getUsername().equals(username) && acc.getPassword().equals(password)) {
+                isValid = true;
             }
         }
+        if(isValid){
+            redirectTo = "home.html";
+        }else{
+            redirectTo = "index.html";
+        }
+        resp.sendRedirect(redirectTo);
     }
 }
