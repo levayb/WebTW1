@@ -16,22 +16,17 @@ import java.util.List;
 @WebServlet("/userlist")
 public class UserListServlet extends HttpServlet {
     private final AccountService service = AccountService.getInstance();
-    private List<Account> accounts = service.getAccounts();
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        List<Account> accounts = service.getAccounts();
         req.setAttribute("accounts", accounts);
         req.getRequestDispatcher("users.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException{
-        PrintWriter out = resp.getWriter();
-        for (Account acc:accounts) {
-            out.println(acc.getUsername());
-            out.println(acc.getEmail());
-            out.println(acc.getMentor(acc.isMentor));
-        }
         doGet(req,resp);
     }
 }
