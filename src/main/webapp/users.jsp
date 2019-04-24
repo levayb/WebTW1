@@ -10,14 +10,14 @@
     <title>Userlist</title>
 </head>
 <body>
-    <% List<Account> accounts = new ArrayList<>(); %>
-    <% if (request.getAttribute("accounts") != null){ %>
-        <% accounts.addAll((List<Account>)request.getAttribute("accounts")); %>
-    <% } %>
-    <% for (Account acc : accounts) { %>
-    <p><i><%= acc.getUsername() %></i>: <%= acc.getEmail() %><br>
-     <%= acc.getMentor(acc.isMentor) %> </p>
-    <% } %>
+        <% List<Account> accounts = new ArrayList<>(); %>
+        <% if (request.getAttribute("accounts") != null){ %>
+            <% accounts.addAll((List<Account>)request.getAttribute("accounts")); %>
+        <% } %>
+        <% for (Account acc : accounts) { %>
+        <p><i><%= acc.getUsername() %></i>: <%= acc.getEmail() %><br>
+         <%= acc.getMentor(acc.isMentor) %> </p>
+        <% } %>
 </body>
 </html>
 

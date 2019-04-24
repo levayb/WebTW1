@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 
@@ -25,6 +26,12 @@ public class UserListServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException{
+        PrintWriter out = resp.getWriter();
+        for (Account acc:accounts) {
+            out.println(acc.getUsername());
+            out.println(acc.getEmail());
+            out.println(acc.getMentor(acc.isMentor));
+        }
         doGet(req,resp);
     }
 }
