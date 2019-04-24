@@ -2,8 +2,6 @@ package com.codecool.web.servlet;
 
 import com.codecool.web.model.Account;
 import com.codecool.web.service.AccountService;
-import com.codecool.web.service.AccountServiceOld;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +16,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
-        resp.sendRedirect("index.html");
+        resp.sendRedirect("index.jsp");
     }
 
     @Override
@@ -35,7 +33,8 @@ public class LoginServlet extends HttpServlet {
         if(isValid){
             redirectTo = "home.html";
         }else{
-            redirectTo = "index.html";
+            redirectTo = "index.jsp";
+            req.getAttribute("error");
         }
         resp.sendRedirect(redirectTo);
     }

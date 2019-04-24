@@ -1,13 +1,13 @@
-<html>
-
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Login</title>
   <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
-  <h1>Login</h1>
+  <h1>Professional Street Learn Management System</h1>
   <div style="text-align: center;">
     <h2>Login to your account</h2>
     <div class="register-page">
@@ -17,6 +17,7 @@
         <br /><input type="submit" value="Submit">
         <a href="register.html">Register here</a>
       </form>
+      <jsp:include page="snippets/show-error.jsp"/>
     </div>
   </div>
 </body>
