@@ -5,16 +5,15 @@ import com.codecool.web.model.Account;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AccountService {
-
+public class CurrentService {
     private List<Account> accounts;
-    private static AccountService ourInstance = new AccountService();
+    private static CurrentService ourInstance = new CurrentService();
 
-    public static AccountService getInstance() {
+    public static CurrentService getInstance() {
         return ourInstance;
     }
 
-    private AccountService() {
+    private CurrentService() {
         accounts = new ArrayList<>();
     }
 

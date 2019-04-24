@@ -2,6 +2,8 @@ package com.codecool.web.servlet;
 
 import com.codecool.web.model.Account;
 import com.codecool.web.service.AccountService;
+import com.codecool.web.service.CurrentService;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,6 +14,7 @@ import java.io.IOException;
 @WebServlet("/logincheck")
 public class LoginServlet extends HttpServlet {
     public AccountService service = AccountService.getInstance();
+    public CurrentService service2 = CurrentService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,6 +31,7 @@ public class LoginServlet extends HttpServlet {
         for (Account acc: service.getAccounts()) {
             if (acc.getUsername().equals(username) && acc.getPassword().equals(password)) {
                 isValid = true;
+                service2.addAccount(acc);
             }
         }
         if(isValid){
