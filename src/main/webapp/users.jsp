@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="users.css">
 </head>
 <body>
-<div><% List<Account> accounts = (List<Account>) request.getAttribute("accounts"); %>
+<div>
+    <table><% List<Account> accounts = (List<Account>) request.getAttribute("accounts"); %>
         <% for (Account acc : accounts) { %>
         <p>Username: <b><%= acc.getUsername() %>
         </b> Email: <i><%= acc.getEmail() %>
         </i><br>
         <p>Status: <%= acc.getMentor(acc.isMentor) %>
         </p>
-    <% } %></div>
+        <% } %></table>
+</div>
 <a href="home.html">Back to homepage</a>
 </body>
 </html>
