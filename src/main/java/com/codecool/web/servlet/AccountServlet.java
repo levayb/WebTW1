@@ -2,7 +2,6 @@ package com.codecool.web.servlet;
 
 import com.codecool.web.model.Account;
 import com.codecool.web.service.AccountService;
-import com.codecool.web.service.AccountServiceOld;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
