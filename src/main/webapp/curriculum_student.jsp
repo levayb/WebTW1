@@ -21,6 +21,10 @@
 
   <a href="home">Go back</a>
 
+<a href="curriculum_monkas.jsp">MonkaS</a>
+
+<a href="curriculum_harambe.jsp">Harambe</a>
+
 </body>
 
 </html>

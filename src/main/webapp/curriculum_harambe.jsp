@@ -10,6 +10,7 @@
 <body>
   <div class="header">
     <h1>Harambe</h1>
+    <a href="home">Go back</a>
   </div>
   <div class="text">
     <img src="https://www.gannett-cdn.com/-mm-/82264f7fec9c39f10b8d938b8c66fa322e26802a/c=114-0-882-1024/local/-/media/2016/05/31/USATODAY/USATODAY/636003160119069885-AFP-552448316-82264054.JPG?width=534&height=712&fit=crop" alt="harambe">

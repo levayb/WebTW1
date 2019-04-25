@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url("background.png");
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.text p {
+    display: inline;
+    text-align: left;
+}
+
+.text img {
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
+.images p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.images pixel {
+    height: 66%;
+    width: 66%;
+}
+
+.images cop {
+    height: 100%;
+    width: 100%;
+}
+
+.images many {
+    height: 33%;
+    width: 33%;
+}
+
+.images giga {
+    height: 100%;
+    width: 100%;
+}
+
+.images reddit {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-align: right;
+}
