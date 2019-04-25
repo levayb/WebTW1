@@ -32,7 +32,7 @@
 
   <br><br>
 
-  <a href="home.html">Go back</a>
+  <a href="home">Go back</a>
 
   <script>
   function play(){

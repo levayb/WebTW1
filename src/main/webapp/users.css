@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-    text-align: center;
     background: #76b852;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(right, #76b852, #8DC26F);
@@ -14,5 +13,33 @@ body {
 }
 
 div {
-
+    position: relative;
+    max-width: 180px;
+    text-align: center;
+    margin: 0 auto 100px;
 }
+
+.back {
+    position: relative;
+    font-size: 20px;
+    left: 8%;
+    top: 10%;
+}
+
+.out {
+    position: relative;
+    font-size: 20px;
+    left: 80%;
+    top: 10%;
+}
+
+th {
+    font-size: 24px;
+}
+
+td {
+    font-size: 20px;
+}
+
+
+

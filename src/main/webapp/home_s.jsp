@@ -15,9 +15,7 @@
 
 <a href="userlist">Registered users</a>
 
-<a href="curriculum_student.html">Student curriculum</a>
-
-<a href="curriculum_mentor.html">Mentor curriculum</a>
+<a href="curriculum_student.jsp">Student curriculum</a>
 
 <a href="logout">Logout</a>
 

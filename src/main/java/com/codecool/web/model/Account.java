@@ -4,7 +4,7 @@ public class Account {
 
     public final String username;
     public final String password;
-    public final boolean isMentor;
+    public boolean isMentor;
     public final String email;
 
     public Account(String username, String password, boolean isMentor, String email){
@@ -35,6 +35,14 @@ public class Account {
             return "Mentor";
         }else{
             return "Student";
+        }
+    }
+
+    public void setMentor(){
+        if(isMentor){
+            this.isMentor = false;
+        }else{
+            this.isMentor = true;
         }
     }
 

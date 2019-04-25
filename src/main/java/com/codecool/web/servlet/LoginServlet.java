@@ -27,6 +27,7 @@ public class LoginServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String redirectTo;
+        boolean Mentor = false;
         boolean isValid = false;
         for (Account acc: service.getAccounts()) {
             if (acc.getUsername().equals(username) && acc.getPassword().equals(password)) {
@@ -35,7 +36,11 @@ public class LoginServlet extends HttpServlet {
             }
         }
         if(isValid){
-            redirectTo = "home.html";
+            if(service2.getAccounts().get(0).isMentor){
+                redirectTo = "home";
+            }else{
+                redirectTo = "home";
+            }
         }else{
             redirectTo = "index.jsp";
             req.getAttribute("error");
