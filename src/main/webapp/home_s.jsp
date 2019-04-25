@@ -17,8 +17,6 @@
 
 <a href="curriculum_student.jsp">Student curriculum</a>
 
-<a href="curriculum_mentor.jsp">Mentor curriculum</a>
-
 <a href="logout">Logout</a>
 
 </body>
