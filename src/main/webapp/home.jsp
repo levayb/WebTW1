@@ -9,7 +9,7 @@
 
 <body>
 
-<h1>Codecool LMS Landing page</h1>
+<h1>Memecool MMS Homepage</h1>
 
   <a href="currentuser">Current user</a>
 
