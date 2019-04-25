@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
             }
         }
         if(isValid){
-            redirectTo = "home.html";
+            redirectTo = "home.jsp";
         }else{
             redirectTo = "index.jsp";
             req.getAttribute("error");
