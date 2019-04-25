@@ -12,10 +12,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-table {
-    position: absolute;
+div {
+    position: relative;
+    max-width: 180px;
     text-align: center;
-    left: 40%;
+    margin: 0 auto 100px;
 }
 
 .back {
