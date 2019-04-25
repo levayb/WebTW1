@@ -11,13 +11,20 @@
 </head>
 <body>
 <div>
-    <table><% List<Account> accounts = (List<Account>) request.getAttribute("accounts"); %>
-        <% for (Account acc : accounts) { %>
-        <p>Username: <b><%= acc.getUsername() %>
-        </b> Email: <i><%= acc.getEmail() %>
-        </i><br>
-        <p>Status: <%= acc.getMentor(acc.isMentor) %>
-        </p>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Status</th>
+            <% List<Account> accounts = (List<Account>) request.getAttribute("accounts"); %>
+            <% for (Account acc : accounts) { %>
+        </tr>
+        <td><b><%= acc.getUsername() %>
+        </b></td>
+        <td><i><%= acc.getEmail() %>
+        </i></td>
+        <td><%= acc.getMentor(acc.isMentor) %>
+        </td>
         <% } %></table>
 </div>
 <a href="home.html">Back to homepage</a>
