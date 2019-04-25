@@ -2,7 +2,6 @@ package com.codecool.web.servlet;
 
 import com.codecool.web.model.Account;
 import com.codecool.web.service.AccountService;
-import com.codecool.web.service.AccountServiceOld;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,7 +28,7 @@ public class AccountServlet extends HttpServlet {
         boolean isMentor = Boolean.valueOf(req.getParameter("selection"));
         String email = req.getParameter("email");
         service.addAccount(new Account(username, password, isMentor, email));
-        resp.sendRedirect("index.html");
+        resp.sendRedirect("index.jsp");
     }
 
 }

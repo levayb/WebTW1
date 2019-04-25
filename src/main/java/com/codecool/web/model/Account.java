@@ -2,10 +2,10 @@ package com.codecool.web.model;
 
 public class Account {
 
-    private final String username;
-    private final String password;
-    private final boolean isMentor;
-    private final String email;
+    public final String username;
+    public final String password;
+    public final boolean isMentor;
+    public final String email;
 
     public Account(String username, String password, boolean isMentor, String email){
         this.username = username;
@@ -28,5 +28,18 @@ public class Account {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getMentor(boolean isMentor){
+        if(isMentor){
+            return "Mentor";
+        }else{
+            return "Student";
+        }
+    }
+
+    @Override
+    public String toString(){
+        return getUsername() + getEmail() + getMentor(isMentor);
     }
 }
