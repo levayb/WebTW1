@@ -10,12 +10,10 @@
 <body>
   <div class="header">
     <h1>MonkaS</h1>
-    <img src="nicemonkas.png" alt="logo" />
-    <br>
   </div>
-
   <div class="text">
     <img src="nicemonkas.png" alt="logo" />
+    <br>
     <h2>About:</h2>
     <p>MonkaS is a Better Twitch TV emote featuring an illustration of Pepe the Frog
       appearing frightened while sweating, which is typically used in Twitch chat during
@@ -27,7 +25,6 @@
       On September 24th, 2016, the emote was added to the FrankerFaceZ.
       Twitch
       extension.</p>
-    <br>
     <h2>Spread:</h2>
     <p>On February 17th, 2017, Redditor kucykzaglady submitted a picture of the emote
       to the /r/forsen subreddit. That month, monkaS was added to the TwitchQuotes database.
@@ -35,16 +32,8 @@
       Reddit's /r/place pixel art canvas(shown below).
       On April 10th, Redditor Rekipp submitted a post asking
       "What does slang word 'monkas' mean?" to /r/OutOfTheLoop.</p>
-    <br>
-    <h2>Variations:</h2>
-    <p>Many variations of the emote have been created for use as emotes on Twitch chat,
-      including monkaGIGA (shown below, first from left), monkaThink
-      (shown below, second from left), monkaW (shown below,third from left) and monkaOMEGA
-      (shown below, fourth from left). As of mid-February 2018, 11 variations of the emote
-      were ranked among the most used Twitch emotes according to Stream Elements.</p>
-    <br>
   </div>
-  <br>
+  <!--
   <div class="images">
     <br>
     <p>Other pictures of the MonkaS emote:</p>
@@ -54,5 +43,6 @@
     <img src="https://i.kym-cdn.com/photos/images/original/001/341/937/7aa" alt="giga" />
     <img src="reddit.png" alt="reddit" />
   </div>
+  -->
 
 </html>
