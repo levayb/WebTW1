@@ -19,9 +19,12 @@
         </p>
         <% } %>
 
+        <a href="changestatus">Change status</a>
+
         <a href="home.html">Go back</a>
 
         <a href="logout">Logout</a>
+
 
 </body>
 </html>
