@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="users.css">
 </head>
 <body>
-<div class="center">
-    <table>
+<div>
+    <table class="center">
         <tr>
             <th>Username</th>
             <th>Email</th>
