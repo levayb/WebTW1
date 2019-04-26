@@ -24,9 +24,9 @@
       versions quickly resurfaced.</p>
     <h2>Spread</h2>
     <p>Spread
-      On May 29th, a post about the incident reached the front page of /r/news,[6] where it garnered more than 7,100 votes (87% upvoted) and 6,200 comments in the next two days. The same day, a petition titled "Justice for Harambe" was created on
-      Change.org[2] which called for authorities to hold the child's parents responsible for Harambe's death. Within 48 hours, the petition gained over 338,000 signatures. Meanwhile, the hashtags #JusticeForHarambe and #RIPHarambe began circulating
-      on both Facebook[4][5] and Twitter.[3]</p>
+      On May 29th, a post about the incident reached the front page of /r/news, where it garnered more than 7,100 votes (87% upvoted) and 6,200 comments in the next two days. The same day, a petition titled "Justice for Harambe" was created on
+      Change.org which called for authorities to hold the child's parents responsible for Harambe's death. Within 48 hours, the petition gained over 338,000 signatures. Meanwhile, the hashtags #JusticeForHarambe and #RIPHarambe began circulating
+      on both Facebook and Twitter.</p>
   </div>
 </body>
 

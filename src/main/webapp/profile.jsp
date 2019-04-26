@@ -10,14 +10,25 @@
     <title>Profile</title>
 </head>
 <body>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Status</th>
         <% List<Account> accounts = (List<Account>) request.getAttribute("curr"); %>
         <% for (Account acc : accounts) { %>
-        <p>Username: <b><%= acc.getUsername() %>
-        </b> Email: <i><%= acc.getEmail() %>
-        </i><br>
-        <p>Status: <%= acc.getMentor(acc.isMentor) %>
-        </p>
-        <% } %>
+      </tr>
+      <tr>
+        <td><b><%= acc.getUsername() %></td>
+        <td><i><%= acc.getEmail() %></td>
+        <br>
+          <td><%= acc.getMentor(acc.isMentor) %></td>
+          <% } %>
+      </tr>
+
+    </table>
+  </div>
 
         <a href="changestatus">Change status</a>
 

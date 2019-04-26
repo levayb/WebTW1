@@ -11,7 +11,7 @@
 
 <h1>Memecool MMS Homepage</h1>
 
-  <a href="currentuser">Current user</a>
+<a href="currentuser">Current user</a>
 
 <a href="userlist">Registered users</a>
 
