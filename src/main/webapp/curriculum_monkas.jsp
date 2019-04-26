@@ -13,7 +13,7 @@
     <a href="home">Go back</a>
 </div>
 <div class="text">
-    <img src="nicemonkas.png" alt="logo"/>
+    <img src="monkas2.png" alt="logo"/>
     <br>
     <h2>About:</h2>
     <p>MonkaS is a Better Twitch TV emote featuring an illustration of Pepe the Frog
@@ -47,5 +47,3 @@
 <img src="reddit.png" alt="reddit" />
 </div>
 -->
-
-
