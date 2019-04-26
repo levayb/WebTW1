@@ -16,18 +16,15 @@
   <h2>Student actions</h2>
 
   <br>
+  <a href="curriculum_monkas.jsp">MonkaS</a>
+
+  <a href="curriculum_harambe.jsp">Harambe</a>
 
   <a href="curriculum_student">Submit solution</a>
 
   <br><br>
 
   <a href="home">Go back</a>
-
-
-
-
-
-
 
   <audio id="audio" src="brendon.mp3" ></audio>
   <div class="brendon">

@@ -12,8 +12,8 @@
     <script type="text/javascript" src="brendon.js"></script>
 </head>
 <body>
-<a href="home">Back to homepage</a>
-<a href="logout" class="out">Logout</a>
+  <a href="home" class="back">Back to homepage</a>
+  <a href="logout" class="out">Logout</a>
 <div>
     <table class="center">
         <tr>
