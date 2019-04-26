@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Codecool MeMMS</title>
+
+    <link rel="stylesheet" href="brendon.css">
+    <script type="text/javascript" src="brendon.js"></script>
 </head>
 <body>
     <h2>MonkaS</h2>
@@ -24,5 +27,32 @@
     <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/341/938/73a">
     <img src="https://i.kym-cdn.com/photos/images/original/001/341/942/d06">
     <img src="https://i.kym-cdn.com/photos/images/original/001/341/945/34f">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <audio id="audio" src="brendon.mp3" ></audio>
+  <div class="brendon">
+      <img onclick="play()" src="brendon.png"/>
+  </div>
 </body>
 </html>
