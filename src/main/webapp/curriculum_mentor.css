@@ -41,3 +41,24 @@ a:hover {
 a:active {
   color: white;
 }
+
+table {
+  margin: auto;
+  position: relative;
+  padding: 45px;
+  text-align: center;
+  background: url("table.png");
+  border-radius: 15px;
+  border-spacing: 0
+}
+
+td {
+  border-right: solid;
+  border-color: white;
+  border-radius: 1px;
+  padding: 10px;
+}
+
+.geci {
+  border-right: none;
+}

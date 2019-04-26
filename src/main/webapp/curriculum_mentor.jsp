@@ -18,23 +18,17 @@
 
   <br>
 
-  <a href="curriculum_mentor.html">Add text page</a>
-
-  <br><br>
-
-  <a href="curriculum_mentor.html">Add assignment page</a>
-
-  <br><br>
-
-  <a href="curriculum_mentor.html">Grade a solution</a>
-
-  <br><br>
-
-  <a href="attandance.html">Take attendance</a>
-
-  <br><br>
-
-  <a href="home">Go back</a>
+    <div class="table">
+      <table>
+        <tr>
+          <td><a href="curriculum_mentor.html">Add text page</a></td>
+          <td><a href="curriculum_mentor.html">Add assignment page</a></td>
+          <td><a href="curriculum_mentor.html">Grade a solution</a></td>
+          <td><a href="attandance.html">Take attendance</a></td>
+          <td class="geci"><a href="home">Go back</a></td>
+        </tr>
+      </table>
+    </div>
 
   <audio id="audio" src="brendon.mp3" ></audio>
     <div class="brendon">
