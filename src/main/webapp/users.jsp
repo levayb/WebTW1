@@ -27,7 +27,7 @@
         </td>
         <% } %></table>
 </div>
-<a href="home">Back to homepage</a>
+<a href="home" class="back">Back to homepage</a>
 <a href="logout" class="out">Logout</a>
 </body>
 </html>

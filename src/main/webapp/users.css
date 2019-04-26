@@ -1,45 +1,59 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-    background: #76b852;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background: -moz-linear-gradient(right, #76b852, #8DC26F);
-    background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background: linear-gradient(to left, #76b852, #8DC26F);
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  background-image: url("background.png");
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
-div {
-    position: relative;
-    max-width: 180px;
-    text-align: center;
-    margin: 0 auto 100px;
+table {
+  position: relative;
+  max-width: 180px;
+  margin: 0 auto 100px;
+  text-align: center;
+  text-align: center;
 }
 
 .back {
-    position: relative;
-    font-size: 20px;
-    left: 8%;
-    top: 10%;
+  position: relative;
+  font-size: 20px;
+  left: 8%;
+  top: 10%;
 }
 
 .out {
-    position: relative;
-    font-size: 20px;
-    left: 80%;
-    top: 10%;
+  position: relative;
+  font-size: 20px;
+  left: 80%;
+  top: 10%;
 }
 
 th {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 td {
-    font-size: 20px;
+  font-size: 20px;
 }
 
+/* A link that has not been visited */
+a:link {
+  color: white;
+}
 
+/* A link that has been visited */
+a:visited {
+  color: white;
+}
 
+/* A link that is hovered on */
+a:hover {
+  color: white;
+}
+
+/* A link that is selected */
+a:active {
+  color: white;
+}
