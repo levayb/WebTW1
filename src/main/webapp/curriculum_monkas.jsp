@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="brendon.js"></script>
     <title>MonkaS</title>
+    <link rel="stylesheet" href="brendon.css">
     <link rel="stylesheet" href="monkas.css">
 </head>
-
 <body>
 <div class="header">
     <h1>MonkaS</h1>
@@ -33,6 +33,10 @@
         Reddit's /r/place pixel art canvas(shown below).
         On April 10th, Redditor Rekipp submitted a post asking
         "What does slang word 'monkas' mean?" to /r/OutOfTheLoop.</p>
+</div>
+<audio id="audio" src="brendon.mp3" ></audio>
+<div class="brendon">
+  <img onclick="play()" src="brendon.png"/>
 </div>
 </body>
 </html>

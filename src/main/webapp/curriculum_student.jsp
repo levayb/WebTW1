@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Student curriculum</title>
   <link rel="stylesheet" href="curriculum_student.css">
+  <link rel="stylesheet" href="brendon.css">
+  <script type="text/javascript" src="brendon.js"></script>
 </head>
 
 <body>
@@ -14,6 +16,9 @@
   <h2>Student actions</h2>
 
   <br>
+  <a href="curriculum_monkas.jsp">MonkaS</a>
+
+  <a href="curriculum_harambe.jsp">Harambe</a>
 
   <a href="curriculum_student">Submit solution</a>
 
@@ -21,10 +26,10 @@
 
   <a href="home">Go back</a>
 
-<a href="curriculum_monkas.jsp">MonkaS</a>
-
-<a href="curriculum_harambe.jsp">Harambe</a>
-
+  <audio id="audio" src="brendon.mp3" ></audio>
+  <div class="brendon">
+      <img onclick="play()" src="brendon.png"/>
+  </div>
 </body>
 
 </html>

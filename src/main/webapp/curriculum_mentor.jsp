@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Mentor curriculum</title>
-  <link rel="stylesheet" href="curriculum_mentor.css">
+    <script type="text/javascript" src="brendon.js"></script>
+    <meta charset="UTF-8">
+    <title>Mentor curriculum</title>
+    <link rel="stylesheet" href="curriculum_mentor.css">
+    <link rel="stylesheet" href="brendon.css">
 </head>
 
 <body>
@@ -34,16 +36,10 @@
 
   <a href="home">Go back</a>
 
-  <script>
-  function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-  </script>
-
   <audio id="audio" src="brendon.mp3" ></audio>
-  <img onclick="play()" src="brendon.png"/>
-
+    <div class="brendon">
+        <img onclick="play()" src="brendon.png"/>
+    </div>
 
 
 </body>

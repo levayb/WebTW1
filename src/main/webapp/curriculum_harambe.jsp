@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Harambe</title>
-  <link rel="stylesheet" href="harambe.css">
+    <meta charset="UTF-8">
+    <title>Harambe</title>
+    <link rel="stylesheet" href="brendon.css">
+    <script type="text/javascript" src="brendon.js"></script>
+    <link rel="stylesheet" href="harambe.css">
 </head>
 
 <body>
@@ -28,6 +30,11 @@
       Change.org which called for authorities to hold the child's parents responsible for Harambe's death. Within 48 hours, the petition gained over 338,000 signatures. Meanwhile, the hashtags #JusticeForHarambe and #RIPHarambe began circulating
       on both Facebook and Twitter.</p>
   </div>
+  <audio id="audio" src="brendon.mp3" ></audio>
+  <div class="brendon">
+      <img onclick="play()" src="brendon.png"/>
+  </div>
+
 </body>
 
 </html>
