@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="users.css">
 </head>
 <body>
+  <a href="home" class="back">Back to homepage</a>
+  <a href="logout" class="out">Logout</a>
 <div>
     <table class="center">
         <tr>
@@ -27,7 +29,5 @@
         </td>
         <% } %></table>
 </div>
-<a href="home" class="back">Back to homepage</a>
-<a href="logout" class="out">Logout</a>
 </body>
 </html>
