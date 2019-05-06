@@ -10,6 +10,7 @@ body {
 
 table {
   position: relative;
+  top: 375px;
   max-width: 180px;
   margin: 0 auto 100px;
   text-align: center;

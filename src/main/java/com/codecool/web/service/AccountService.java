@@ -5,7 +5,7 @@ import com.codecool.web.model.Account;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AccountService {
+public class                     AccountService {
 
     private List<Account> accounts;
     private static AccountService ourInstance = new AccountService();
