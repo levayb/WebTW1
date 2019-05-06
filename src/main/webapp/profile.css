@@ -29,3 +29,20 @@ a:hover {
 a:active {
   color: white;
 }
+
+table {
+  margin: auto;
+  position: relative;
+  padding: 45px;
+  text-align: center;
+  background: url("table.png");
+  border-radius: 15px;
+  border-spacing: 0
+}
+
+th {
+  border-bottom: solid;
+  border-radius: 1px;
+  border-color: white;
+  padding: 10px;
+}

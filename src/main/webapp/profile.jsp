@@ -7,17 +7,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="brendon.css">
+    <script type="text/javascript" src="brendon.js"></script>
     <title>Profile</title>
 </head>
 <body>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Status</th>
         <% List<Account> accounts = (List<Account>) request.getAttribute("curr"); %>
         <% for (Account acc : accounts) { %>
-        <p>Username: <b><%= acc.getUsername() %>
-        </b> Email: <i><%= acc.getEmail() %>
-        </i><br>
-        <p>Status: <%= acc.getMentor(acc.isMentor) %>
-        </p>
-        <% } %>
+      </tr>
+      <tr>
+        <td><b><%= acc.getUsername() %></td>
+        <td><i><%= acc.getEmail() %></td>
+        <br>
+          <td><%= acc.getMentor(acc.isMentor) %></td>
+          <% } %>
+      </tr>
+
+    </table>
+  </div>
 
         <a href="changestatus">Change status</a>
 
@@ -25,6 +38,9 @@
 
         <a href="logout">Logout</a>
 
-
+  <audio id="audio" src="brendon.mp3" ></audio>
+  <div class="brendon">
+      <img onclick="play()" src="brendon.png"/>
+  </div>
 </body>
 </html>

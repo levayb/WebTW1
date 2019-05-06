@@ -5,6 +5,8 @@
 <head>
   <title>Login</title>
   <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="brendon.css">
+  <script type="text/javascript" src="brendon.js"></script>
 </head>
 <body>
   <h1>Professional Street Learn Management System</h1>
@@ -15,10 +17,13 @@
         <br />username:<input type="text" name="username" placeholder="username">
         <br />password:<input type="password" name="password" placeholder="password">
         <br /><input type="submit" value="Submit">
-        <a href="register.html">Register here</a>
+        <a href="register.jsp">Register here</a>
       </form>
-      <jsp:include page="snippets/show-error.jsp"/>
     </div>
+  </div>
+  <audio id="audio" src="brendon.mp3" ></audio>
+  <div class="brendon">
+      <img onclick="play()" src="brendon.png"/>
   </div>
 </body>
 
