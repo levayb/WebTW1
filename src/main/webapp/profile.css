@@ -1,48 +1,76 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-  text-align: center;
-  color: white;
-  background-image: url("background.png");
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
+    text-align: center;
+    color: white;
+    background-image: url("background.png");
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+}
+
+a {
+    font-size: 20px;
 }
 
 /* A link that has not been visited */
 a:link {
-  color: white;
+    color: white;
+    text-decoration: none;
 }
 
 /* A link that has been visited */
 a:visited {
-  color: white;
+    color: white;
+    text-decoration: none;
 }
 
 /* A link that is hovered on */
 a:hover {
-  color: white;
+    color: white;
 }
 
 /* A link that is selected */
 a:active {
-  color: white;
+    color: white;
+    text-decoration: none;
 }
 
-table {
-  margin: auto;
-  position: relative;
-  padding: 45px;
-  text-align: center;
-  background: url("table.png");
-  border-radius: 15px;
-  border-spacing: 0
+.links_table {
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+    border-spacing: 0;
+    background: url("table.png");
+    border-radius: 15px;
+    position: relative;
+    left: 90%;
+    height: 100px;
+    width: 133px;
 }
 
-th {
-  border-bottom: solid;
-  border-radius: 1px;
-  border-color: white;
-  padding: 10px;
+.accounts {
+    position: relative;
+    z-index: 1;
+    margin: 300px auto 100px;
+    padding: 25px;
+    text-align: center;
+    background: url("table.png");
+    border-radius: 15px;
+    width: 500px;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+    border-spacing: 0;
+}
+
+.accounts th {
+    border-bottom: solid;
+    border-radius: 1px;
+    border-color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.links_table td {
+    font-size: 20px;
 }

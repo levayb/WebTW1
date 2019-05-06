@@ -1,4 +1,4 @@
-    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 h1 {
   text-align: center;
@@ -18,20 +18,15 @@ body {
   color: white;
 }
 
-a {
-  text-align: center;
-}
-<<<<<<< HEAD
-=======
-
-/* A link that has not been visited */
 a:link {
   color: white;
+  text-decoration: none;
 }
 
 /* A link that has been visited */
 a:visited {
   color: white;
+  text-decoration: none;
 }
 
 /* A link that is hovered on */
@@ -42,5 +37,10 @@ a:hover {
 /* A link that is selected */
 a:active {
   color: white;
+  text-decoration: none;
 }
->>>>>>> c066249bb3be595e97de2c0b6443bc678b6c677f
+
+a {
+  font-size: 20px;
+  text-align: center;
+}

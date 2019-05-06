@@ -8,31 +8,30 @@ body {
   color: white;
 }
 
-table {
+.links_table2 {
+  text-align: center;
+  color: white;
+  text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+  border-spacing: 0;
+  background: url("table.png");
+  border-radius: 15px;
+  position: relative;
+  left: 90%;
+  height: 100px;
+  width: 133px;
+}
+
+.center {
   position: relative;
   z-index: 1;
-  margin: 0 auto 100px;
-  margin-top: 300px;
+  margin: 300px auto 100px;
   padding: 45px;
   text-align: center;
   background: url("table.png");
   border-radius: 15px;
-  width: 200px;
-  height: 150px;
-}
-
-.back {
-  position: relative;
-  font-size: 20px;
-  left: 8%;
-  top: 10%;
-}
-
-.out {
-  position: relative;
-  font-size: 20px;
-  left: 80%;
-  top: 10%;
+  width: 500px;
+  text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+  border-spacing: 0;
 }
 
 th {
@@ -50,11 +49,13 @@ td {
 /* A link that has not been visited */
 a:link {
   color: white;
+  text-decoration: none;
 }
 
 /* A link that has been visited */
 a:visited {
   color: white;
+  text-decoration: none;
 }
 
 /* A link that is hovered on */
@@ -65,4 +66,9 @@ a:hover {
 /* A link that is selected */
 a:active {
   color: white;
+  text-decoration: none;
+}
+
+a {
+  font-size: 20px;
 }

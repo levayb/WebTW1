@@ -12,8 +12,21 @@
     <script type="text/javascript" src="brendon.js"></script>
 </head>
 <body>
-  <a href="home" class="back">Back to homepage</a>
-  <a href="logout" class="out">Logout</a>
+<div class="links2">
+    <table class="links_table2">
+        <tr>
+            <td>
+                <a href="home" class="back">Back to homepage</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="logout" class="out">Logout</a>
+            </td>
+        </tr>
+    </table>
+
+</div>
 <div>
     <table class="center">
         <tr>
@@ -25,15 +38,15 @@
         </tr>
         <td><b><%= acc.getUsername() %>
         </b></td>
-        <td><i><%= acc.getEmail() %>
-        </i></td>
-        <td><%= acc.getMentor(acc.isMentor) %>
-        </td>
+        <td><b><%= acc.getEmail() %>
+        </b></td>
+        <td><b><%= acc.getMentor(acc.isMentor) %>
+            <b></b></td>
         <% } %></table>
 </div>
-<audio id="audio" src="brendon.mp3" ></audio>
+<audio id="audio" src="brendon.mp3"></audio>
 <div class="brendon">
-  <img onclick="play()" src="brendon.png"/>
+    <img onclick="play()" src="brendon.png"/>
 </div>
 </body>
 </html>
