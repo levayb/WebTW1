@@ -2,29 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Home Page</title>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="brendon.css">
-  <script type="text/javascript" src="brendon.js"></script>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="brendon.css">
+    <script type="text/javascript" src="brendon.js"></script>
 </head>
 
 <body>
 
 <h1>Memecool MMS Homepage</h1>
 
-  <a href="currentuser">Current user</a>
+<div>
+    <table class="table">
+        <tr>
+            <td>
+                <a href="currentuser">Current user</a>
+            </td>
+            <td>
+                <a href="userlist">Registered users</a>
+            </td>
+            <td>
+                <a href="curriculum_student.jsp">Student curriculum</a>
+            </td>
+            <td class="geci">
+                <a href="logout">Logout</a>
+            </td>
+        </tr>
+    </table>
+</div>
 
-<a href="userlist">Registered users</a>
-
-<a href="curriculum_student.jsp">Student curriculum</a>
-
-<a href="logout">Logout</a>
-
-  <audio id="audio" src="brendon.mp3" ></audio>
-  <div class="brendon">
-      <img onclick="play()" src="brendon.png"/>
-  </div>
+<audio id="audio" src="brendon.mp3"></audio>
+<div class="brendon">
+    <img onclick="play()" src="brendon.png"/>
+</div>
 
 </body>
 

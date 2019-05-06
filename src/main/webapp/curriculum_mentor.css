@@ -20,16 +20,19 @@ body {
 
 a {
   text-align: center;
+  font-size: 20px;
 }
 
 /* A link that has not been visited */
 a:link {
   color: white;
+  text-decoration: none;
 }
 
 /* A link that has been visited */
 a:visited {
   color: white;
+  text-decoration: none;
 }
 
 /* A link that is hovered on */
@@ -40,6 +43,7 @@ a:hover {
 /* A link that is selected */
 a:active {
   color: white;
+  text-decoration: none;
 }
 
 table {
@@ -49,7 +53,7 @@ table {
   text-align: center;
   background: url("table.png");
   border-radius: 15px;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 td {

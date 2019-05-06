@@ -18,6 +18,16 @@ body {
   color: white;
 }
 
+.table {
+  background: url("table.png");
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  color: white;
+  left: 33%;
+  height: 75px;
+}
+
 a:link {
   color: white;
   text-decoration: none;
