@@ -3,7 +3,7 @@
 body {
     text-align: center;
     color: white;
-    background-image: url("background.png");
+    background-image: url("../images/background.png");
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -42,7 +42,7 @@ a:active {
     color: white;
     text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
     border-spacing: 0;
-    background: url("table.png");
+    background: url("../images/table.png");
     border-radius: 15px;
     position: relative;
     left: 90%;
@@ -52,13 +52,13 @@ a:active {
 
 .accounts {
     position: relative;
-    z-index: 1;
-    margin: 300px auto 100px;
+    margin: auto;
     padding: 25px;
     text-align: center;
-    background: url("table.png");
+    background: url("../images/table.png");
     border-radius: 15px;
     width: 500px;
+    bottom: 50%;
     text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
     border-spacing: 0;
 }

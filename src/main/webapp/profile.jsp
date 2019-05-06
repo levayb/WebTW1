@@ -6,9 +6,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
     <title>Profile</title>
 </head>
 <body>
@@ -63,9 +63,9 @@
 
     </table>
 </div>
-<audio id="audio" src="brendon.mp3"></audio>
+<audio id="audio" src="brendon/brendon.mp3"></audio>
 <div class="brendon">
-    <img onclick="play()" src="brendon.png"/>
+    <img onclick="play()" src="images/brendon.png"/>
 </div>
 </body>
 </html>

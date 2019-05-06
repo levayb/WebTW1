@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Harambe</title>
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
-    <link rel="stylesheet" href="harambe.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
+    <link rel="stylesheet" href="css/harambe.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-    <img src=imposibru.jpg
+      <img src=images/imposibru.jpg
     <h2>About</h2>
     <p>About
       Impossibru is a reaction image based on a stillshot of an asian man wearing a bizarre expression and the caption reading
@@ -35,9 +35,9 @@
       imageboards and forums, including FunnyJunk, Cheezburger, FAILblog and chan among others.
       There are also Facebook groups dedicated to the "Impossibru" man.</p>
   </div>
-  <audio id="audio" src="brendon.mp3" ></audio>
+  <audio id="audio" src="brendon/brendon.mp3"></audio>
   <div class="brendon">
-      <img onclick="play()" src="brendon.png"/>
+      <img onclick="play()" src="images/brendon.png"/>
   </div>
 
 </body>

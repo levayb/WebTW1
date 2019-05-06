@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="brendon.js"></script>
+    <script type="text/javascript" src="brendon/brendon.js"></script>
     <title>MonkaS</title>
-    <link rel="stylesheet" href="brendon.css">
-    <link rel="stylesheet" href="monkas.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <link rel="stylesheet" href="css/monkas.css">
 </head>
 <body>
 <div class="header">
@@ -13,7 +13,7 @@
     <a href="home">Go back</a>
 </div>
 <div class="text">
-    <img src="monkas2.png" alt="logo"/>
+    <img src="images/monkas2.png" alt="logo"/>
     <br>
     <h2>About:</h2>
     <p>MonkaS is a Better Twitch TV emote featuring an illustration of Pepe the Frog
@@ -34,9 +34,9 @@
         On April 10th, Redditor Rekipp submitted a post asking
         "What does slang word 'monkas' mean?" to /r/OutOfTheLoop.</p>
 </div>
-<audio id="audio" src="brendon.mp3" ></audio>
+<audio id="audio" src="brendon/brendon.mp3"></audio>
 <div class="brendon">
-  <img onclick="play()" src="brendon.png"/>
+    <img onclick="play()" src="images/brendon.png"/>
 </div>
 </body>
 </html>

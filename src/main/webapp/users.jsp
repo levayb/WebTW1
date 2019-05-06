@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Userlist</title>
-    <link rel="stylesheet" href="users.css">
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
+    <link rel="stylesheet" href="css/users.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
 </head>
 <body>
 <div class="links2">
@@ -28,25 +28,27 @@
 
 </div>
 <div>
-    <table class="center">
+    <table class="center" style="overflow-x:auto;">
         <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Status</th>
+            <td class="top">Username</td>
+            <td class="top">Email</td>
+            <td class="top">Status</td>
             <% List<Account> accounts = (List<Account>) request.getAttribute("accounts"); %>
             <% for (Account acc : accounts) { %>
         </tr>
-        <td><b><%= acc.getUsername() %>
-        </b></td>
-        <td><b><%= acc.getEmail() %>
-        </b></td>
-        <td><b><%= acc.getMentor(acc.isMentor) %>
-            <b></b></td>
+        <tr>
+            <td><b><%= acc.getUsername() %>
+            </b></td>
+            <td><b><%= acc.getEmail() %>
+            </b></td>
+            <td><b><%= acc.getMentor(acc.isMentor) %>
+                <b></b></td>
+        </tr>
         <% } %></table>
 </div>
-<audio id="audio" src="brendon.mp3"></audio>
+<audio id="audio" src="brendon/brendon.mp3"></audio>
 <div class="brendon">
-    <img onclick="play()" src="brendon.png"/>
+    <img onclick="play()" src="images/brendon.png"/>
 </div>
 </body>
 </html>

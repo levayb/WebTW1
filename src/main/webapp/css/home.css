@@ -5,7 +5,7 @@ h1 {
 }
 
 body {
-  background: url("background.png") no-repeat 50% 50% fixed;
+  background: url("../images/background.png") no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,13 +19,15 @@ body {
 }
 
 .table {
-  background: url("table.png");
-  border-radius: 15px;
+  margin: auto;
   position: relative;
+  background: url("../images/table.png");
+  border-radius: 15px;
   text-align: center;
   color: white;
-  left: 33%;
   height: 75px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
 }
 
 a:link {

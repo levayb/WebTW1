@@ -5,7 +5,7 @@ h1 {
 }
 
 body {
-  background: url("background.png") no-repeat 50% 50% fixed;
+  background: url("../images/background.png") no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -51,18 +51,10 @@ table {
   position: relative;
   padding: 45px;
   text-align: center;
-  background: url("table.png");
+  background: url("../images/table.png");
   border-radius: 15px;
   border-spacing: 0;
-}
-
-td {
-  border-right: solid;
-  border-color: white;
-  border-radius: 1px;
-  padding: 10px;
-}
-
-.geci {
-  border-right: none;
+  height: 100px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
 }

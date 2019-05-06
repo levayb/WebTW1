@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <script type="text/javascript" src="brendon.js"></script>
+  <script type="text/javascript" src="brendon/brendon.js"></script>
   <meta charset="UTF-8">
   <title>Attandance</title>
-  <link rel="stylesheet" href="curriculum_student.css">
-  <link rel="stylesheet" href="brendon.css">
+  <link rel="stylesheet" href="css/attendance.css">
+  <link rel="stylesheet" href="css/brendon.css">
 </head>
 
 <body>
@@ -17,9 +17,9 @@
 
   <a href="home">Go back</a>
 
-  <audio id="audio" src="brendon.mp3" ></audio>
+  <audio id="audio" src="brendon/brendon.mp3"></audio>
   <div class="brendon">
-      <img onclick="play()" src="brendon.png"/>
+    <img onclick="play()" src="images/brendon.png"/>
   </div>
 
 </body>

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Harambe</title>
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
-    <link rel="stylesheet" href="harambe.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
+    <link rel="stylesheet" href="css/harambe.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-    <img src=overly_attached_GF.jpg
+      <img src=images/overly_attached_GF.jpg
     <h2>About</h2>
     <p>About
       Overly Attached Girlfriend is an advice animal image macro featuring webcam picture of vlogger
@@ -31,9 +31,9 @@
       "Overly Attached Girlfriend," which generated more than 800 comments in the span of seven hours as well as a
       Quickmeme page for an advice animal character bearing the same name.</p>
   </div>
-  <audio id="audio" src="brendon.mp3" ></audio>
+  <audio id="audio" src="brendon/brendon.mp3"></audio>
   <div class="brendon">
-      <img onclick="play()" src="brendon.png"/>
+      <img onclick="play()" src="images/brendon.png"/>
   </div>
 
 </body>

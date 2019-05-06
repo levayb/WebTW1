@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Harambe</title>
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
-    <link rel="stylesheet" href="harambe.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
+    <link rel="stylesheet" href="css/harambe.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-    <img src=philosoraptor.jpg
+      <img src=images/philosoraptor.jpg
     <h2>About</h2>
     <p>About
       Philosoraptor is an advice animal image macro series featuring an illustration of a Velociraptor paired with
@@ -28,9 +28,9 @@
       In November 2009, Philosoraptor was added to the Advice Dog "variations" section on Encyclopedia Dramatica.
       On November 26th, an entry for Philosoraptor was created on Urban Dictionary</p>
   </div>
-  <audio id="audio" src="brendon.mp3" ></audio>
+  <audio id="audio" src="brendon/brendon.mp3"></audio>
   <div class="brendon">
-      <img onclick="play()" src="brendon.png"/>
+      <img onclick="play()" src="images/brendon.png"/>
   </div>
 
 </body>

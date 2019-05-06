@@ -3,9 +3,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Register</title>
-  <link rel="stylesheet" href="register.css">
-  <link rel="stylesheet" href="brendon.css">
-  <script type="text/javascript" src="brendon.js"></script>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
 </head>
 
 <body>
@@ -22,9 +22,9 @@
           <option value="false">student</option>
           <option value="true">mentor</option>
         </select>
-        <audio id="audio" src="brendon.mp3"></audio>
+          <audio id="audio" src="brendon/brendon.mp3"></audio>
         <div class="brendon">
-            <img onclick="play()" src="brendon.png"/>
+            <img onclick="play()" src="images/brendon.png"/>
         </div>
         <br /><input type="submit" value="Submit">
       </form>

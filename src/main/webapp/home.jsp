@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
 </head>
 
 <body>
@@ -34,9 +34,9 @@
         </tr>
     </table>
 </div>
-<audio id="audio" src="brendon.mp3"></audio>
+<audio id="audio" src="brendon/brendon.mp3"></audio>
 <div class="brendon">
-    <img onclick="play()" src="brendon.png"/>
+    <img onclick="play()" src="images/brendon.png"/>
 </div>
 
 </body>

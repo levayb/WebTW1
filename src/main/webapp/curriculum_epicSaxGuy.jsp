@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Harambe</title>
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
-    <link rel="stylesheet" href="harambe.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
+    <link rel="stylesheet" href="css/harambe.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-    <img src=saxguy.jpg
+      <img src=images/saxguy.jpg
     <h2>About</h2>
     <p>About
       Eipc Sax Guy (also known as Saxroll) is the nickname given to Sergey Stepanov, the saxophonist of the Moldovan
@@ -34,9 +34,9 @@
       of Stepanov's solo was registered at SaxRolled.com on June 24th, 2010. A mobile "sax-rolling" app for Android
       was released in late 2010.</p>
   </div>
-  <audio id="audio" src="brendon.mp3" ></audio>
+  <audio id="audio" src="brendon/brendon.mp3"></audio>
   <div class="brendon">
-      <img onclick="play()" src="brendon.png"/>
+      <img onclick="play()" src="images/brendon.png"/>
   </div>
 
 </body>

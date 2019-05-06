@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Harambe</title>
-    <link rel="stylesheet" href="brendon.css">
-    <script type="text/javascript" src="brendon.js"></script>
-    <link rel="stylesheet" href="harambe.css">
+    <link rel="stylesheet" href="css/brendon.css">
+    <script type="text/javascript" src="brendon/brendon.js"></script>
+    <link rel="stylesheet" href="css/harambe.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-    <img src=spoderman.jpg
+      <img src=images/spoderman.jpg
     <h2>About</h2>
     <p>About
       Spoderman (also known as Spodermen) is an MS Paint character resembling a poorly-drawn version of Spiderman.
@@ -32,9 +32,9 @@
       Spoderman and adding captions. These comments included intentional misspellings of
       Spider-man characters, like Mary Jane and Green Goblin.</p>
   </div>
-  <audio id="audio" src="brendon.mp3" ></audio>
+  <audio id="audio" src="brendon/brendon.mp3"></audio>
   <div class="brendon">
-      <img onclick="play()" src="brendon.png"/>
+      <img onclick="play()" src="images/brendon.png"/>
   </div>
 
 </body>
