@@ -31,6 +31,11 @@
         </tr>
         <tr>
             <td>
+                <input name="file" type="file" id="file">
+            </td>
+        </tr>
+        <tr>
+            <td>
 
             </td>
         </tr>

@@ -15,6 +15,7 @@ import java.io.IOException;
 public class AccountServlet extends HttpServlet {
 
     public AccountService service = AccountService.getInstance();
+    String redirectTo;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
@@ -23,13 +24,26 @@ public class AccountServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        service.load();
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         boolean isMentor = Boolean.valueOf(req.getParameter("selection"));
         String email = req.getParameter("email");
-        service.addAccount(new Account(username, password, isMentor, email));
+        boolean isValid = true;
+        for (Account acc:service.getAccounts()) {
+            if(acc.getUsername().equalsIgnoreCase(username) || acc.getEmail().equalsIgnoreCase(email)){
+                isValid = false;
+            }
+        }
+        if(isValid){
+            service.addAccount(new Account(username, password, isMentor, email));
+            redirectTo = "index.jsp";
+        }else{
+            redirectTo = "register.jsp";
+        }
+
         service.save();
-        resp.sendRedirect("index.jsp");
+        resp.sendRedirect(redirectTo);
     }
 
 }

@@ -20,6 +20,7 @@ public class                     AccountService {
 
     private AccountService() {
         accounts = new ArrayList<>();
+        accounts.add(new Account("admin","admin",true,"ad@mi.n"));
     }
 
     public List<Account> getAccounts() {
