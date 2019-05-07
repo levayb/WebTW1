@@ -1,3 +1,4 @@
+<%@ page %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +26,7 @@
             <td>
                 <a href="curriculum_mentor.jsp">Curriculum</a>
             </td>
-            <td class="geci">
+            <td>
                 <a href="logout">Logout</a>
             </td>
         </tr>
