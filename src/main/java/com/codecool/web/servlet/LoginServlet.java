@@ -44,7 +44,6 @@ public class LoginServlet extends HttpServlet {
             }
         }else{
             redirectTo = "index.jsp";
-            req.getAttribute("error");
         }
         resp.sendRedirect(redirectTo);
     }
