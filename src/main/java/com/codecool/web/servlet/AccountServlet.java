@@ -28,6 +28,7 @@ public class AccountServlet extends HttpServlet {
         boolean isMentor = Boolean.valueOf(req.getParameter("selection"));
         String email = req.getParameter("email");
         service.addAccount(new Account(username, password, isMentor, email));
+        service.save();
         resp.sendRedirect("index.jsp");
     }
 

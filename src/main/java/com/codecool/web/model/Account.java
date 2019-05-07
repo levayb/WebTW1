@@ -1,6 +1,8 @@
 package com.codecool.web.model;
 
-public class Account {
+import java.io.Serializable;
+
+public class Account implements Serializable {
 
     public final String username;
     public final String password;
