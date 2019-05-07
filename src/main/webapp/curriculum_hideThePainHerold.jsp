@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Harambe</title>
+    <title>Herold</title>
     <link rel="stylesheet" href="css/brendon.css">
     <script type="text/javascript" src="brendon/brendon.js"></script>
     <link rel="stylesheet" href="css/harambe.css">
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-      <img src=images/painHerold.jpg
+      <img src=images/painHerold.jpg>
     <h2>About</h2>
     <p>About
       Hide The Pain Harold, also simply referred to as "Harold" or "Maurice" is the nickname given to a senior

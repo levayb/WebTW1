@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Harambe</title>
+    <title>Philosoraptor</title>
     <link rel="stylesheet" href="css/brendon.css">
     <script type="text/javascript" src="brendon/brendon.js"></script>
     <link rel="stylesheet" href="css/harambe.css">
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-      <img src=images/philosoraptor.jpg
+      <img src=images/philosoraptor.jpg>
     <h2>About</h2>
     <p>About
       Philosoraptor is an advice animal image macro series featuring an illustration of a Velociraptor paired with
