@@ -23,10 +23,7 @@
                 <a href="userlist">Registered users</a>
             </td>
             <td>
-                <a href="curriculum_student.jsp">Student curriculum</a>
-            </td>
-            <td>
-                <a href="curriculum_mentor.jsp">Mentor curriculum</a>
+                <a href="curriculum_mentor.jsp">Curriculum</a>
             </td>
             <td class="geci">
                 <a href="logout">Logout</a>

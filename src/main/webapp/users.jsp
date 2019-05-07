@@ -35,6 +35,7 @@
             <td class="top">Status</td>
             <% List<Account> accounts = (List<Account>) request.getAttribute("accounts"); %>
             <% for (Account acc : accounts) { %>
+            <% if (!acc.getUsername().equals("admin")) { %>
         </tr>
         <tr>
             <td><b><%= acc.getUsername() %>
@@ -44,7 +45,8 @@
             <td><b><%= acc.getMentor(acc.isMentor) %>
                 <b></b></td>
         </tr>
-        <% } %></table>
+        <% }
+        } %></table>
 </div>
 <audio id="audio" src="brendon/brendon.mp3"></audio>
 <div class="brendon">

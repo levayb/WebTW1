@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class                     AccountService {
+public class AccountService {
 
     private List<Account> accounts;
     private static AccountService ourInstance = new AccountService();
@@ -31,25 +31,25 @@ public class                     AccountService {
         accounts.add(acc);
     }
 
-    public void save(){
-        try{
+    public void save() {
+        try {
             FileOutputStream fout = new FileOutputStream("accounts.ser");
             ObjectOutputStream oos = new ObjectOutputStream(fout);
             oos.writeObject(accounts);
             oos.close();
             fout.close();
-        }catch (Exception e){
+        } catch (Exception e) {
         }
     }
 
-    public void load(){
-        try{
+    public void load() {
+        try {
             FileInputStream fin = new FileInputStream("accounts.ser");
             ObjectInputStream ois = new ObjectInputStream(fin);
-            accounts = (ArrayList<Account>)ois.readObject();
+            accounts = (ArrayList<Account>) ois.readObject();
             ois.close();
             fin.close();
-        }catch (Exception e){
+        } catch (Exception e) {
         }
     }
 }

@@ -27,6 +27,7 @@
             <img onclick="play()" src="images/brendon.png"/>
         </div>
         <br /><input type="submit" value="Submit">
+          <a href="login.jsp">Login here</a>
       </form>
     </div>
   </div>

@@ -23,7 +23,7 @@
           <td><a href="curriculum_student.jsp">Submit solution</a></td>
           <td><a href="curriculum_monkas.jsp">MonkaS</a></td>
           <td><a href="curriculum_harambe.jsp">Harambe</a></td>
-          <td class="geci"><a href="home">Go back</a></td>
+          <td><a href="home">Go back</a></td>
         </tr>
       </table>
     </div>

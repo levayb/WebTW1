@@ -14,11 +14,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 
 .table {
+  font-size: 25px;
   margin: auto;
   position: relative;
   background: url("../images/table.png");
@@ -53,6 +54,6 @@ a:active {
 }
 
 a {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
