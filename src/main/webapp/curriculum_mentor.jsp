@@ -10,30 +10,30 @@
 </head>
 
 <body>
-  <h1>Welcome to the Mentor curriculum!</h1>
+<h1>Welcome to the Mentor curriculum!</h1>
 
-  <br>
+<br>
 
-  <h2>Mentor actions</h2>
+<h2>Mentor actions</h2>
 
-  <br>
+<br>
 
-    <div class="table">
-      <table>
+<div class="table">
+    <table>
         <tr>
             <td><a href="curriculum_mentor.jsp">Add text page</a></td>
             <td><a href="curriculum_mentor.jsp">Add assignment page</a></td>
             <td><a href="curriculum_mentor.jsp">Grade a solution</a></td>
             <td><a href="attandance.jsp">Take attendance</a></td>
-          <td class="geci"><a href="home">Go back</a></td>
+            <td class="geci"><a href="home">Go back</a></td>
         </tr>
-      </table>
-    </div>
+    </table>
+</div>
 
-  <audio id="audio" src="brendon/brendon.mp3"></audio>
-    <div class="brendon">
-        <img onclick="play()" src="images/brendon.png"/>
-    </div>
+<audio id="audio" src="brendon/brendon.mp3"></audio>
+<div class="brendon">
+    <img onclick="play()" src="images/brendon.png"/>
+</div>
 
 
 </body>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Harambe</title>
+    <title>Impossibru</title>
     <link rel="stylesheet" href="css/brendon.css">
     <script type="text/javascript" src="brendon/brendon.js"></script>
     <link rel="stylesheet" href="css/harambe.css">

@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-      <img src=images/overly_attached_GF.jpg
+      <img src=images/overly_attached_GF.jpg>
     <h2>About</h2>
     <p>About
       Overly Attached Girlfriend is an advice animal image macro featuring webcam picture of vlogger

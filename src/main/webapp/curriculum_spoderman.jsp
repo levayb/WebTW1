@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Harambe</title>
+    <title>Spoderman</title>
     <link rel="stylesheet" href="css/brendon.css">
     <script type="text/javascript" src="brendon/brendon.js"></script>
     <link rel="stylesheet" href="css/harambe.css">
@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-      <img src=images/spoderman.jpg
+      <img src=images/spoderman.jpg>
     <h2>About</h2>
     <p>About
       Spoderman (also known as Spodermen) is an MS Paint character resembling a poorly-drawn version of Spiderman.
