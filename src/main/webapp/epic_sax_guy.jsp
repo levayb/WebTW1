@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-      <img src=images/saxguy.jpg
+      <img src=images/saxguy.jpg>
     <h2>About</h2>
     <p>About
       Eipc Sax Guy (also known as Saxroll) is the nickname given to Sergey Stepanov, the saxophonist of the Moldovan

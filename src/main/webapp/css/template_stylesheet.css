@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    background: url("../images/background.png") no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.assignments {
+    position: fixed;
+    left: 10%;
+    top: 25%;
+    text-align: center;
+    background: url("../images/table.png");
+    border-radius: 15px;
+    border-spacing: 0;
+    font-weight: bold;
+    width: 8%;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+    font-size: 25px;
+}
+
+.current_assignment {
+    position: fixed;
+    left: 60%;
+    top: 25%;
+    text-align: center;
+    background: url("../images/table.png");
+    border-radius: 15px;
+    border-spacing: 0;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+}
+
+td {
+    text-align: center;
+}
+
+img {
+    width: 40%;
+    height: 40%;
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* A link that has not been visited */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* A link that has been visited */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* A link that is hovered on */
+a:hover {
+    color: white;
+}
+
+/* A link that is selected */
+a:active {
+    color: white;
+    text-decoration: none;
+}

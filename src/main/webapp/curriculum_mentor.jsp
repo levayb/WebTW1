@@ -21,11 +21,10 @@
 <div class="table">
     <table>
         <tr>
-            <td><a href="curriculum_mentor.jsp">Add text page</a></td>
-            <td><a href="curriculum_mentor.jsp">Add assignment page</a></td>
-            <td><a href="curriculum_mentor.jsp">Grade a solution</a></td>
+            <td><a href="assignmentinfo">View the assignments</a></td>
+            <td><a href="add_assignment.jsp">Add assignment page</a></td>
             <td><a href="attandance.jsp">Take attendance</a></td>
-            <td class="geci"><a href="home">Go back</a></td>
+            <td><a href="home">Go back</a></td>
         </tr>
     </table>
 </div>
