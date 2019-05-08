@@ -17,10 +17,10 @@ import java.util.List;
 @WebServlet("/assignmentinfo")
 public class AssignmentListServlet extends HttpServlet {
     private final AssignmentService service = AssignmentService.getInstance();
-    public LoginServlet lservlet;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        service.load();
         List<Assignment> assignments = service.getAssignments();
         req.setAttribute("assignments", assignments);
         req.getRequestDispatcher("assignments.jsp").forward(req, resp);
