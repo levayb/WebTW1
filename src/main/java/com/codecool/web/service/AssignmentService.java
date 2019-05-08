@@ -12,7 +12,7 @@ import java.util.List;
 
 public class AssignmentService {
 
-    private List<Assignment> assignments;
+    public List<Assignment> assignments;
     private static AssignmentService ourInstance = new AssignmentService();
 
     public static AssignmentService getInstance() {

@@ -7,18 +7,21 @@ public class Assignment implements Serializable {
 
     public String name;
     public String imgsrc;
-    public final String about = "About";
+    public String about;
     public String about_data;
-    public final String origin = "Origin";
+    public String origin;
     public String origin_data;
-    public final String spread = "Spread";
+    public String spread;
     public String spread_data;
 
     public Assignment(String imgsrc, String name, String about, String about_data, String origin, String origin_data, String spread, String spread_data){
         this.name = name;
         this.imgsrc = imgsrc;
+        this.about = about;
         this.about_data = about_data;
+        this.origin = origin;
         this.origin_data = origin_data;
+        this.spread = spread;
         this.spread_data = spread_data;
     }
 

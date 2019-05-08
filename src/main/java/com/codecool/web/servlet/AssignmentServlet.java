@@ -23,7 +23,7 @@ public class AssignmentServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        doGet(req,resp);
+        service.load();
         String name = req.getParameter("name");
         String imgsrc = req.getParameter("imgsrc");
         String about_data = req.getParameter("about_data");

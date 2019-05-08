@@ -8,5 +8,6 @@
 </head>
 <body>
 <h1>Welcome to the Curriculum</h1>
+<a href="assignmentinfo">Info</a>
 </body>
 </html>
