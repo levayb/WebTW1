@@ -19,8 +19,9 @@
     <div class="brendon">
         <img onclick="play()" src="images/brendon.png"/>
     </div>
-    <br/><input type="submit" value="Submit">
+    <br/><input type="submit" value="Create Assignment">
 </form>
 </body>
+
 
 </html>
