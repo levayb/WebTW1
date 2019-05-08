@@ -20,6 +20,7 @@
         <a href="register.jsp">Register here</a>
       </form>
     </div>
+    <jsp:include page="snippets/show-error.jsp"/>
   </div>
   <audio id="audio" src="brendon/brendon.mp3"></audio>
   <div class="brendon">

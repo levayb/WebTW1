@@ -43,6 +43,7 @@ public class LoginServlet extends HttpServlet {
                 redirectTo = "home";
             }
         }else{
+            req.setAttribute("error","Bad login");
             redirectTo = "index.jsp";
         }
         resp.sendRedirect(redirectTo);

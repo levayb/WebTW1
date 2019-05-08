@@ -48,4 +48,19 @@ public class AssignmentService {
         } catch (Exception e) {
         }
     }
+
+    public void delete(Assignment a){
+        Assignment deletable = new Assignment("","","About","","Origin","","Spread","");
+        for (Assignment iterated:assignments) {
+            if(iterated.getName().equalsIgnoreCase(a.getName())){
+                deletable.setImgsrc(a.getImgsrc());
+                deletable.setName(a.getName());
+                deletable.setAbout_data(a.getAbout_data());
+                deletable.setOrigin_data(a.getOrigin_data());
+                deletable.setSpread_data(a.getSpread_data());
+            }
+        }if (!deletable.getName().isEmpty()){
+            assignments.remove(deletable);
+        }
+    }
 }

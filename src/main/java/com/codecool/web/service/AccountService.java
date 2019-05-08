@@ -52,4 +52,15 @@ public class AccountService {
         } catch (Exception e) {
         }
     }
+
+    public void delete(Account acc){
+        Account deletable = new Account("","",false,"");
+        for (Account a:accounts) {
+            if(a.getUsername().equalsIgnoreCase(acc.getUsername())){
+                deletable = a;
+            }
+        }if (!deletable.getUsername().isEmpty()){
+            accounts.remove(deletable);
+        }
+    }
 }
