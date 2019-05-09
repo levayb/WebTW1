@@ -16,7 +16,7 @@ body {
 
 .assignment_names {
     position: relative;
-    margin: 15% auto;
+    margin: auto auto;
     padding: 20px;
     width: 90px;
     font-size: 25px;
