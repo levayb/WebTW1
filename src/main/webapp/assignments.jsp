@@ -11,18 +11,7 @@
 </head>
 <body>
 <a href="curriculum_mentor.jsp">Go back</a>
-<div>
-    <table class="assignment_names">
-        <% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
-        <% for (Assignment assignment : assignments) { %>
-        <tr>
-            <td><%= assignment.getName() %>
-            </td>
-            <td><img src="<%= assignment.getImgsrc()%>"></td>
-            <td></td>
-            <% } %></tr>
-    </table>
-</div>
+<% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
 <div>
     <form action="deleteassignment" method="post" class="delete_assignment">
         <select name="selection">
@@ -36,6 +25,31 @@
         </select>
         <input type="submit" value="Delete" class="button">
     </form>
+</div>
+<div>
+    <table class="assignment_names">
+        <% for (Assignment assignment : assignments) { %>
+        <tr>
+            <td><%= assignment.getName() %>
+            </td>
+            <td><img src="<%= assignment.getImgsrc()%>"></td>
+            <td></td>
+            <% } %></tr>
+    </table>
+</div>
+<div class="actual_text">
+    <h1><%= assignments.get(5).getName()%>
+    </h1>
+    <img src="<%= assignments.get(5).getImgsrc()%>">
+    <h2>About</h2>
+    <p><%= assignments.get(5).getAbout_data()%>
+    </p>
+    <h2>Origin</h2>
+    <p><%= assignments.get(5).getOrigin_data()%>
+    </p>
+    <h2>Spread</h2>
+    <p><%= assignments.get(5).getSpread_data()%>
+    </p>
 </div>
 </body>
 </html>

@@ -45,11 +45,29 @@ select {
 
 
 .delete_assignment {
-    position: center;
+    text-align: center;
+    margin: auto;
+}
+
+.actual_text {
+    max-width: 50%;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    background: url("../images/table.png");
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 .assignment_names {
     position: relative;
+    float: left;
     margin: auto auto;
     padding: 20px;
     width: 90px;
