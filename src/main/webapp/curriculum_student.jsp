@@ -20,7 +20,7 @@
 <div class="table">
     <table>
         <tr>
-            <td><a href="curriculum_student.jsp">Submit solution</a></td>
+            <td><a href="add_assignment.jsp">Submit solution</a></td>
             <td><a href="curriculum_monkas.jsp">MonkaS</a></td>
             <td><a href="curriculum_harambe.jsp">Harambe</a></td>
             <td><a href="home">Go back</a></td>

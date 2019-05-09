@@ -25,7 +25,7 @@
             <td>
                 <a href="curriculum_student.jsp">Curriculum</a>
             </td>
-            <td class="geci">
+            <td>
                 <a href="logout">Logout</a>
             </td>
         </tr>
