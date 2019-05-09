@@ -15,7 +15,7 @@
     <a href="home">Go back</a>
   </div>
   <div class="text">
-      <img src=images/imposibru.jpg
+      <img src=images/imposibru.jpg>
     <h2>About</h2>
     <p>About
       Impossibru is a reaction image based on a stillshot of an asian man wearing a bizarre expression and the caption reading

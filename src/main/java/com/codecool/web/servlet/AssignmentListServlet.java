@@ -1,8 +1,6 @@
 package com.codecool.web.servlet;
 
-import com.codecool.web.model.Account;
 import com.codecool.web.model.Assignment;
-import com.codecool.web.service.AccountService;
 import com.codecool.web.service.AssignmentService;
 
 import javax.servlet.ServletException;

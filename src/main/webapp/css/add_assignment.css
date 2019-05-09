@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    background: url("../images/background.png") no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.assignment_form {
+    position: relative;
+    margin: auto;
+
+}
+
+.box {
+    resize: both;
+}
