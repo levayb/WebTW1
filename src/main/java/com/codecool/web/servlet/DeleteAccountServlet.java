@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet("/delete")
 public class DeleteAccountServlet extends HttpServlet {
@@ -21,11 +22,16 @@ public class DeleteAccountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
-        req.getRequestDispatcher("curriculum.jsp");
+        List<Account> accounts = service.getAccounts();
+        List<Account> curr = service2.getAccounts();
+        req.setAttribute("curr",curr);
+        req.setAttribute("accounts", accounts);
+        req.getRequestDispatcher("users.jsp").forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         service.load();
+        doGet(req, resp);
         String username = req.getParameter("selection");
         boolean isValid = false;
         Account deletable = new Account("", "", false, "");
@@ -39,6 +45,6 @@ public class DeleteAccountServlet extends HttpServlet {
             service.delete(deletable);
         }
         service.save();
-        resp.sendRedirect("curriculum.jsp");
+        resp.sendRedirect("users.jsp");
     }
 }

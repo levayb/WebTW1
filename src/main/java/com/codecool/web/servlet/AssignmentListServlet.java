@@ -20,6 +20,7 @@ public class AssignmentListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        service.load();
         List<Assignment> assignments = service.getAssignments();
         req.setAttribute("assignments", assignments);
         req.getRequestDispatcher("assignments.jsp").forward(req, resp);

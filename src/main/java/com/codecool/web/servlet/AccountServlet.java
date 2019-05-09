@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 
 @WebServlet("/account")
@@ -29,6 +30,7 @@ public class AccountServlet extends HttpServlet {
         String password = req.getParameter("password");
         boolean isMentor = Boolean.valueOf(req.getParameter("selection"));
         String email = req.getParameter("email");
+        final PrintWriter writer = resp.getWriter();
         boolean isValid = true;
         for (Account acc:service.getAccounts()) {
             if(acc.getUsername().equalsIgnoreCase(username) || acc.getEmail().equalsIgnoreCase(email)){
@@ -39,6 +41,7 @@ public class AccountServlet extends HttpServlet {
             service.addAccount(new Account(username, password, isMentor, email));
             redirectTo = "index.jsp";
         }else{
+            writer.println("Account already exists.");
             redirectTo = "register.jsp";
         }
 
