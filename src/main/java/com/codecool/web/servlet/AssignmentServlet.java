@@ -1,6 +1,5 @@
 package com.codecool.web.servlet;
 
-import com.codecool.web.model.Account;
 import com.codecool.web.model.Assignment;
 import com.codecool.web.service.AssignmentService;
 
@@ -37,7 +36,7 @@ public class AssignmentServlet extends HttpServlet {
         }
         if(isValid){
             service.addAssignment(new Assignment(imgsrc,name,"About",about_data,"Origin",origin_data,"Spread",spread_data));
-            redirectTo = "curriculum.jsp";
+            redirectTo = "assignmentinfo";
         }else{
             redirectTo = "add_assignment.jsp";
         }

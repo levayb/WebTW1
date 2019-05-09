@@ -14,9 +14,43 @@ body {
     color: white;
 }
 
+select {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 10%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 10%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all;
+    transition: all;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.delete_assignment {
+    position: center;
+}
+
 .assignment_names {
     position: relative;
-    margin: 15% auto;
+    margin: auto auto;
     padding: 20px;
     width: 90px;
     font-size: 25px;
@@ -47,7 +81,7 @@ h1 {
 }
 
 a {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 

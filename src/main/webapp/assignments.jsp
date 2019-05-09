@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="com.codecool.web.model.Assignment" %>
-<%@ page import="com.codecool.web.model.Account" %>
 <%@ page import="java.util.List" %>
 <!doctype html>
 <html lang="en">
@@ -11,10 +10,10 @@
     <link rel="stylesheet" href="css/assignment.css">
 </head>
 <body>
-<% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
 <a href="curriculum_mentor.jsp">Go back</a>
 <div>
     <table class="assignment_names">
+        <% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
         <% for (Assignment assignment : assignments) { %>
         <tr>
             <td><%= assignment.getName() %>
@@ -24,17 +23,19 @@
             <% } %></tr>
     </table>
 </div>
-    <form action="deleteassignment" method="post">
+<div>
+    <form action="deleteassignment" method="post" class="delete_assignment">
         <select name="selection">
-        <% for (Assignment a : assignments) { %>
+            <% for (Assignment a : assignments) { %>
             <% if (!a.getName().isEmpty()) { %>
 
-                    <option value=<%=a.getName()%>><%=a.getName()%></option>
+            <option value=<%=a.getName()%>><%=a.getName()%>
+            </option>
             <% }
             } %>
         </select>
-        <input type="submit" value="Delete"></a>
+        <input type="submit" value="Delete" class="button">
     </form>
-</form>
+</div>
 </body>
 </html>
