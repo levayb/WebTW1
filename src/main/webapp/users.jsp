@@ -48,21 +48,22 @@
         <% }
         } %></table>
 </div>
-    <form action="delete" method="post">
+<form action="delete" method="post" class="deleter">
     <% List<Account> curr = (List<Account>) request.getAttribute("curr"); %>
     <% String current = curr.get(0).getUsername(); %>
     <% if (current.equals("admin")) { %>
-        <select name="selection">
+    <select name="selection">
         <% for (Account a : accounts) { %>
-            <% if (!a.getUsername().equals("admin")) { %>
+        <% if (!a.getUsername().equals("admin")) { %>
 
-                    <option value=<%=a.getUsername()%>><%=a.getUsername()%></option>
-            <% }
-            } %>
-        </select>
-        <input type="submit" value="Delete"></a>
+        <option value=<%=a.getUsername()%>><%=a.getUsername()%>
+        </option>
+        <% }
+        } %>
+    </select>
+    <input type="submit" value="Delete" class="button"></a>
     <% } %>
-    </form>
+</form>
 <audio id="audio" src="brendon/brendon.mp3"></audio>
 <div class="brendon">
     <img onclick="play()" src="images/brendon.png"/>
