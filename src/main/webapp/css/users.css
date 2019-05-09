@@ -1,75 +1,108 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-  background-image: url("../images/background.png");
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
+    background-image: url("../images/background.png");
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
 }
 
 .links_table2 {
-  text-align: center;
-  color: white;
-  text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
-  border-spacing: 0;
-  background: url("../images/table.png");
-  border-radius: 15px;
-  position: relative;
-  left: 90%;
-  height: 100px;
-  width: 133px;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+    border-spacing: 0;
+    background: url("../images/table.png");
+    border-radius: 15px;
+    position: relative;
+    left: 90%;
+    height: 100px;
+    width: 133px;
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 10%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all;
+    transition: all;
+    cursor: pointer;
+    text-align: center;
+}
+
+.deleter {
+    text-align: center;
+}
+
+select {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 10%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
 .center {
-  position: relative;
-  z-index: 1;
-  margin: 300px auto 100px;
-  padding: 45px;
-  text-align: center;
-  background: url("../images/table.png");
-  border-radius: 15px;
-  width: 500px;
-  text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
-  border-spacing: 0;
-  height: 150px;
+    position: relative;
+    z-index: 1;
+    margin: 300px auto 100px;
+    padding: 45px;
+    text-align: center;
+    background: url("../images/table.png");
+    border-radius: 15px;
+    width: 500px;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+    border-spacing: 0;
+    height: 150px;
 }
 
 .top {
-  border-bottom: solid;
-  border-radius: 1px;
-  border-color: white;
-  padding: 10px;
-  font-size: 24px;
+    border-bottom: solid;
+    border-radius: 1px;
+    border-color: white;
+    padding: 10px;
+    font-size: 24px;
 }
 
 td {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 /* A link that has not been visited */
 a:link {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 /* A link that has been visited */
 a:visited {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 /* A link that is hovered on */
 a:hover {
-  color: white;
+    color: white;
 }
 
 /* A link that is selected */
 a:active {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 a {
-  font-size: 20px;
+    font-size: 20px;
 }
