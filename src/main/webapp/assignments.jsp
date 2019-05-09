@@ -7,37 +7,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignments</title>
-    <link rel="stylesheet" href="css/users.css">
-    <link rel="stylesheet" href="css/brendon.css">
-    <script type="text/javascript" src="brendon/brendon.js"></script>
+    <link rel="stylesheet" href="css/assignment.css">
 </head>
 <body>
+<a href="curriculum_mentor.jsp">Go back</a>
 <div>
-    <table class="center" style="overflow-x:auto;">
+    <table class="assignment_names">
+        <% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
+        <% for (Assignment assignment : assignments) { %>
         <tr>
-            <% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
-            <% for (Assignment ass : assignments) { %>
-            <td><%= ass.getName() %>
+            <td><%= assignment.getName() %>
             </td>
-            <td><img src="<%= ass.getImgsrc()%>"></td>
-            <td><%= ass.getAbout()%>
-            </td>
-            <td><%= ass.getAbout_data()%>
-            </td>
-            <td><%= ass.getOrigin()%>
-            </td>
-            <td><%= ass.getOrigin_data()%>
-            </td>
-            <td><%= ass.getSpread()%>
-            </td>
-            <td><%= ass.getSpread_data()%>
-            </td>
-        </tr>
-        <% } %></table>
-</div>
-<audio id="audio" src="brendon/brendon.mp3"></audio>
-<div class="brendon">
-    <img onclick="play()" src="images/brendon.png"/>
+            <td><img src="<%= assignment.getImgsrc()%>"></td>
+            <td></td>
+            <% } %></tr>
+    </table>
 </div>
 </body>
 </html>
