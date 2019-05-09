@@ -11,13 +11,53 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     font-size: 25px;
-    color: white;
+    color: black;
+}
+
+h4 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
 }
 
 .assignment_form {
     position: relative;
-    margin: auto;
+    z-index: 1;
+    max-width: 500px;
+    margin: 0 auto 50px;
+    padding: 15px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
 
+.button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: green;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: black;
+    font-size: 14px;
+    -webkit-transition: all;
+    transition: all;
+    cursor: pointer;
+}
+
+.give {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: center;
+    word-break: break-word;
 }
 
 a {

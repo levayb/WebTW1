@@ -11,17 +11,19 @@
 
 <body>
 <a href="curriculum_mentor.jsp">Go back</a>
+<br><br>
 <form action="assignment" method="post" class="assignment_form">
-    <br/>Name: <input type="text" name="name" placeholder="name">
-    <br/>Image link: <input type="text" name="imgsrc" placeholder="image link">
-    <br/>About paragraph: <input type="text" name="about_data" placeholder="about data">
-    <br/>Origin paragraph: <input type="text" name="origin_data" placeholder="origin data">
-    <br/>Spread parahraph: <input type="text" name="spread_data" placeholder="spread data">
+    <h4>Create an assignment</h4>
+    <br/><textarea type="text" name="name" placeholder="Assignment name" class="give" rows="10" cols="10"></textarea>
+    <br/><textarea type="text" name="imgsrc" placeholder="Direct link to image" class="give"></textarea>
+    <br/><textarea type="text" name="about_data" placeholder="About paragraph" class="give"></textarea>
+    <br/><textarea type="text" name="origin_data" placeholder="Origin paragraph" class="give"></textarea>
+    <br/><textarea type="text" name="spread_data" placeholder="Spread paragraph" class="give"></textarea>
     <audio id="audio" src="brendon/brendon.mp3"></audio>
     <div class="brendon">
         <img onclick="play()" src="images/brendon.png"/>
     </div>
-    <br><br><input type="submit" value="Create Assignment">
+    <br><br><input type="submit" value="Create Assignment" class="button">
 </form>
 </body>
 
