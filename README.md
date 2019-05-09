@@ -1,8 +1,8 @@
 # About
 
-Repo for the _IntelliJ + Maven + Web Quickstart_ assignment.
+Meme Management System - Learn about memes, and click on Brendon!
 
-If you plan to use this repo as a "base" for one of your project change
-`<artifactId>intellij-maven-quickstart-web</artifactId>` to reflect what you're
-working on. E.g. `<artifactId>card-game-simulator-web-project</artifactId>` or
-similar.
+Right now in the 2nd sprint - first bigger web project of:
+¤ Boldizsar Levay
+¤ Daniel Toth
+¤ Mark Szombati
