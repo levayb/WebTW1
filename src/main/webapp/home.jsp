@@ -26,7 +26,6 @@
             <td>
                 <a href="curriculum_mentor.jsp">Curriculum</a>
             </td>
-            <td>
                 <a href="logout">Logout</a>
             </td>
         </tr>
