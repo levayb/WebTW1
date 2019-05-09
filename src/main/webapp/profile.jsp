@@ -12,59 +12,69 @@
     <title>Profile</title>
 </head>
 <body>
+<% List<Account> accounts = (List<Account>) request.getAttribute("curr"); %>
 <div class="links">
     <table class="links_table">
-        <tr>
-            <td>
-                <a href="home">Go back</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
+            <tr>
+                <td>
+                    <a href="home">Go back</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="changestatus">Change status</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input name="file" type="file" id="file">
-            </td>
-        </tr>
-        <tr>
-            <td>
+                </td>
+            </tr>
+            <% if(!accounts.get(0).getUsername().equals("admin")) { %>
+                <tr>
+                    <td>
+                        <a href="changestatus">Change status</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="logout">Logout</a>
-            </td>
-        </tr>
+                    </td>
+                </tr>
+            <% } %>
+            <tr>
+                <td>
+                    <a href="logout">Logout</a>
+                </td>
+            </tr>
     </table>
 </div>
 <div class="table">
     <table class="accounts">
-        <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Status</th>
-            <% List<Account> accounts = (List<Account>) request.getAttribute("curr"); %>
-            <% for (Account acc : accounts) { %>
-        </tr>
-        <tr>
-            <td><b><%= acc.getUsername() %>
-            </td>
-            <td><i><%= acc.getEmail() %>
-            </td>
-            <br>
-            <td><%= acc.getMentor(acc.isMentor) %>
-            </td>
-            <% } %>
-        </tr>
+        <% if(!accounts.get(0).getUsername().equals("admin")) { %>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Status</th>
+                <% for (Account acc : accounts) { %>
+            </tr>
+            <tr>
+                <td><b><%= acc.getUsername() %>
+                </td>
+                <td><i><%= acc.getEmail() %>
+                </td>
+                <br>
+                <td><%= acc.getMentor(acc.isMentor) %>
+                </td>
+                <% } %>
+            </tr>
+        <% } else { %>
+            <tr>
+                <td>
+                You're logged in as admin. Clever username - password combination.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <img src="https://i.imgur.com/9NgrpIY.jpg">
+                </td>
+            </tr>
+        <% } %>
 
     </table>
 </div>

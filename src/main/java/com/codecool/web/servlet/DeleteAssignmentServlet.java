@@ -1,7 +1,8 @@
 package com.codecool.web.servlet;
 
 import com.codecool.web.model.Account;
-import com.codecool.web.service.AccountService;
+import com.codecool.web.model.Assignment;
+import com.codecool.web.service.AssignmentService;
 import com.codecool.web.service.CurrentService;
 
 import javax.servlet.ServletException;
@@ -12,38 +13,39 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/delete")
-public class DeleteAccountServlet extends HttpServlet {
+@WebServlet("/deleteassignment")
+public class DeleteAssignmentServlet extends HttpServlet {
 
-    public AccountService service = AccountService.getInstance();
+    public AssignmentService service = AssignmentService.getInstance();
     public CurrentService service2 = CurrentService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
-        List<Account> accounts = service.getAccounts();
+        service.load();
+        List<Assignment> assignments = service.getAssignments();
         List<Account> curr = service2.getAccounts();
         req.setAttribute("curr",curr);
-        req.setAttribute("accounts", accounts);
-        req.getRequestDispatcher("users.jsp").forward(req, resp);
+        req.setAttribute("assignments", assignments);
+        req.getRequestDispatcher("assignments.jsp").forward(req, resp);
     }
 
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        service.load();
         doGet(req, resp);
-        String username = req.getParameter("selection");
         boolean isValid = false;
-        Account deletable = new Account("", "", false, "");
-        for (Account a : service.getAccounts()) {
-            if (a.getUsername().equalsIgnoreCase(username) && !a.getUsername().equalsIgnoreCase(service2.getAccounts().get(0).getUsername())) {
+        Assignment deletable = new Assignment("","","","","","","","");
+        for (Assignment a : service.getAssignments()) {
+            if (a.getName().equals(req.getParameter("selection"))) {
                 isValid = true;
                 deletable = a;
             }
         }
         if (isValid) {
-            service.delete(deletable);
+            service.getAssignments().remove(deletable);
+            service.save();
         }
         service.save();
-        resp.sendRedirect("users.jsp");
+        resp.sendRedirect("assignments.jsp");
     }
 }
