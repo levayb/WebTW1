@@ -38,17 +38,17 @@
     </table>
 </div>
 <div class="actual_text">
-    <h1><%= assignments.get(5).getName()%>
+    <h1><img src="<%= assignments.get(0).getImgsrc() %>" alt="logo"/><%= assignments.get(0).getName()%>
     </h1>
-    <img src="<%= assignments.get(5).getImgsrc()%>">
+    <br><br>
     <h2>About</h2>
-    <p><%= assignments.get(5).getAbout_data()%>
+    <p><%= assignments.get(0).getAbout_data()%>
     </p>
     <h2>Origin</h2>
-    <p><%= assignments.get(5).getOrigin_data()%>
+    <p><%= assignments.get(0).getOrigin_data()%>
     </p>
     <h2>Spread</h2>
-    <p><%= assignments.get(5).getSpread_data()%>
+    <p><%= assignments.get(0).getSpread_data()%>
     </p>
 </div>
 </body>
