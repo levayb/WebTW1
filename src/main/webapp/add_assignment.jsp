@@ -14,7 +14,7 @@
 <br><br>
 <form action="assignment" method="post" class="assignment_form">
     <h4>Create an assignment</h4>
-    <br/><textarea type="text" name="name" placeholder="Assignment name" class="give" rows="10" cols="10"></textarea>
+    <br/><textarea type="text" name="name" placeholder="Assignment name" class="give"></textarea>
     <br/><textarea type="text" name="imgsrc" placeholder="Direct link to image" class="give"></textarea>
     <br/><textarea type="text" name="about_data" placeholder="About paragraph" class="give"></textarea>
     <br/><textarea type="text" name="origin_data" placeholder="Origin paragraph" class="give"></textarea>
