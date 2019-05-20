@@ -23,6 +23,7 @@
         <tr>
             <td><a href="assignmentinfo">View the assignments</a></td>
             <td><a href="add_assignment.jsp">Add assignment page</a></td>
+            <td><a href="delete_assignment.jsp">Delete assignment</a></td>
             <td><a href="attandance.jsp">Take attendance</a></td>
             <td><a href="home">Go back</a></td>
         </tr>

@@ -12,21 +12,7 @@
 <body>
 <a href="curriculum_mentor.jsp">Go back</a>
 <% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
-<div>
-    <form action="deleteassignment" method="post" class="delete_assignment">
-        <select name="selection">
-            <% for (Assignment a : assignments) { %>
-            <% if (!a.getName().isEmpty()) { %>
-
-            <option value=<%=a.getName()%>><%=a.getName()%>
-            </option>
-            <% }
-            } %>
-        </select>
-        <input type="submit" value="Delete" class="button">
-    </form>
-</div>
-<div>
+<div class="split left">
     <table class="assignment_names">
         <% for (Assignment assignment : assignments) { %>
         <tr>
@@ -37,10 +23,14 @@
             <% } %></tr>
     </table>
 </div>
-<div class="actual_text">
-    <h1><img src="<%= assignments.get(0).getImgsrc() %>" alt="logo"/><%= assignments.get(0).getName()%>
+<br>
+<div class="split right">
+    <br>
+    <h1><%= assignments.get(0).getName()%>
     </h1>
-    <br><br>
+    <br>
+    <img src="<%= assignments.get(0).getImgsrc() %>" alt="logo"/>
+    <br>
     <h2>About</h2>
     <p><%= assignments.get(0).getAbout_data()%>
     </p>
