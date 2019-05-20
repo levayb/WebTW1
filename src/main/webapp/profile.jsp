@@ -71,7 +71,7 @@
             </tr>
             <tr>
                 <td>
-                <img src="https://i.imgur.com/9NgrpIY.jpg">
+                <img src="images/admin-admin.jpg">
                 </td>
             </tr>
         <% } %>
