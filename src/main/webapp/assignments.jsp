@@ -23,6 +23,34 @@
             <% } %></tr>
     </table>
 </div>
+<div>
+    <form action="deleteassignment" method="post" class="delete_assignment">
+        <select name="selection">
+            <% for (Assignment a : assignments) { %>
+            <% if (!a.getName().isEmpty()) { %>
+
+            <option value=<%=a.getName()%>><%=a.getName()%>
+            </option>
+            <% }
+            } %>
+        </select>
+        <input type="submit" value="Delete" class="button">
+    </form>
+</div>
+<form action="loadassignment" method="post">
+    <select name="selectionn">
+        <% for (Assignment a : assignments) { %>
+        <% if (!a.getName().isEmpty()) { %>
+
+        <option value=<%=a.getName()%>><%=a.getName()%>
+        </option>
+        <% }
+        } %>
+    </select>
+    <input type="submit" value="load" class="button">
+</form>
+
+<a href="readassignment">Read</a>
 <br>
 <div class="split right">
     <br>
