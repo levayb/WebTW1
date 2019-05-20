@@ -1,7 +1,8 @@
 package com.codecool.web.servlet;
 
 import com.codecool.web.model.Account;
-import com.codecool.web.service.CurrentService;
+import com.codecool.web.model.Assignment;
+import com.codecool.web.service.CurrentAssignmentService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,16 +13,17 @@ import java.io.IOException;
 import java.util.List;
 import java.sql.*;
 
-@WebServlet("/logout")
-public class LogoutServlet extends HttpServlet {
-    public CurrentService service = CurrentService.getInstance();
+@WebServlet("/readassignment")
+public class ReadAssignmentServlet extends HttpServlet {
+
+    public CurrentAssignmentService service = CurrentAssignmentService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Account> curr = service.getAccounts();
+        resp.setContentType("text/html");
+        List<Assignment> curr = service.getAssignments();
         req.setAttribute("curr", curr);
-        curr.remove(0);
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        req.getRequestDispatcher("curriculum.jsp").forward(req, resp);
     }
 
     @Override

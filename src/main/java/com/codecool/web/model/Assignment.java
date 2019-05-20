@@ -1,6 +1,7 @@
 package com.codecool.web.model;
 
 import java.io.Serializable;
+import java.sql.*;
 
 public class Assignment implements Serializable {
 

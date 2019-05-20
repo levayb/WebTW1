@@ -1,9 +1,8 @@
 package com.codecool.web.servlet;
 
-import com.codecool.web.model.Account;
 import com.codecool.web.model.Assignment;
 import com.codecool.web.service.AssignmentService;
-import com.codecool.web.service.CurrentService;
+import com.codecool.web.service.CurrentAssignmentService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,39 +13,39 @@ import java.io.IOException;
 import java.util.List;
 import java.sql.*;
 
-@WebServlet("/deleteassignment")
-public class DeleteAssignmentServlet extends HttpServlet {
-
+@WebServlet("/loadassignment")
+public class LoadAssignmentServlet extends HttpServlet {
     public AssignmentService service = AssignmentService.getInstance();
-    public CurrentService service2 = CurrentService.getInstance();
+    public CurrentAssignmentService service2 = CurrentAssignmentService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         service.load();
         List<Assignment> assignments = service.getAssignments();
-        List<Account> curr = service2.getAccounts();
-        req.setAttribute("curr",curr);
         req.setAttribute("assignments", assignments);
         req.getRequestDispatcher("assignments.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req, resp);
         boolean isValid = false;
-        Assignment deletable = new Assignment("","","","","","","","");
+        String name = req.getParameter("selectionn");
+        Assignment readable = new Assignment("","","","","","","","");
         for (Assignment a : service.getAssignments()) {
-            if (a.getName().equals(req.getParameter("selection"))) {
+            if (a.getName().equalsIgnoreCase(name)) {
+                if(!service2.getAssignments().isEmpty()){
+                    service2.getAssignments().remove(0);
+                }
                 isValid = true;
-                deletable = a;
+                readable = a;
             }
         }
         if (isValid) {
-            service.getAssignments().remove(deletable);
+            service2.addAssignment(readable);
             service.save();
         }
         service.save();
-        resp.sendRedirect("assignments.jsp");
+        resp.sendRedirect("readassignment");
     }
 }
