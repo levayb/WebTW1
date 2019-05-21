@@ -18,13 +18,13 @@
     <table class="table">
         <tr>
             <td>
+                <a href="curriculum_mentor.jsp">Curriculum</a>
+            </td>
+            <td>
                 <a href="currentuser">Current user</a>
             </td>
             <td>
                 <a href="userlist">Registered users</a>
-            </td>
-            <td>
-                <a href="curriculum_mentor.jsp">Curriculum</a>
             </td>
             <td>
                 <a href="logout">Logout</a>
