@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<a href="curriculum_mentor.jsp">Go back</a>
+<a href="home">Go back</a>
 <br><br>
 <form action="assignment" method="post" class="assignment_form">
     <h4>Create an assignment</h4>

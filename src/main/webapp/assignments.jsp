@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/assignment.css">
 </head>
 <body>
-<a href="curriculum_mentor.jsp">Go back</a>
+<a href="home">Go back</a>
 <% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
 <br>
 <div>
