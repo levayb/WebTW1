@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="css/curriculum_mentor.css">
     <link rel="stylesheet" href="css/brendon.css">
 </head>
-
 <body>
 <h1>Welcome to the Mentor curriculum!</h1>
-
 <br>
-
 <h2>Mentor actions</h2>
-
 <br>
-
 <div class="table">
     <table>
         <tr>
             <td><a href="assignmentinfo">View the assignments</a></td>
+            <td></td>
+            <td></td>
             <td><a href="add_assignment.jsp">Add assignment page</a></td>
-            <td><a href="delete_assignment.jsp">Delete assignment</a></td>
-            <td><a href="attandance.jsp">Take attendance</a></td>
+            <td></td>
+            <td></td>
+            <td><a href="attendance.jsp">Take attendance</a></td>
+            <td></td>
+            <td></td>
             <td><a href="home">Go back</a></td>
         </tr>
     </table>

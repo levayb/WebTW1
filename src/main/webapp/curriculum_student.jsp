@@ -21,7 +21,11 @@
     <table>
         <tr>
             <td><a href="assignmentinfo">View the assignments</a></td>
+            <td></td>
+            <td></td>
             <td><a href="add_assignment.jsp">Add assignment page</a></td>
+            <td></td>
+            <td></td>
             <td><a href="home">Go back</a></td>
         </tr>
     </table>

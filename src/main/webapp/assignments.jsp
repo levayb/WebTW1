@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="css/assignment.css">
 </head>
 <body>
-<a href="home">Go back</a>
 <% List<Assignment> assignments = (List<Assignment>) request.getAttribute("assignments"); %>
 <br>
 <div>
+    <a href="home">Go back</a>
+    <br>
+    <br>
+    <br>
     <form action="loadassignment" method="post">
         <select name="selectionn">
             <% for (Assignment a : assignments) { %>

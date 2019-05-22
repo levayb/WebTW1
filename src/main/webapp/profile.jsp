@@ -20,20 +20,10 @@
                 <a href="home">Go back</a>
             </td>
         </tr>
-        <tr>
-            <td>
-
-            </td>
-        </tr>
         <% if (!accounts.get(0).getUsername().equals("admin")) { %>
         <tr>
             <td>
                 <a href="changestatus">Change status</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-
             </td>
         </tr>
         <% } %>

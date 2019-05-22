@@ -19,12 +19,18 @@
             <td>
                 <a href="currentuser">Current user</a>
             </td>
+            <td></td>
+            <td></td>
             <td>
                 <a href="userlist">Registered users</a>
             </td>
+            <td></td>
+            <td></td>
             <td>
                 <a href="curriculum_student.jsp">Curriculum</a>
             </td>
+            <td></td>
+            <td></td>
             <td>
                 <a href="logout">Logout</a>
             </td>

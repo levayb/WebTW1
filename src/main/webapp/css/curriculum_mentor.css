@@ -20,7 +20,7 @@ body {
 
 a {
   text-align: center;
-  font-size: 20px;
+    font-size: 25px;
 }
 
 /* A link that has not been visited */
@@ -47,9 +47,10 @@ a:active {
 }
 
 table {
+    font-size: 25px;
   margin: auto;
   position: relative;
-  padding: 45px;
+    padding: 40px;
   text-align: center;
   background: url("../images/table.png");
   border-radius: 15px;

@@ -9,7 +9,7 @@
     <script type="text/javascript" src="brendon/brendon.js"></script>
 </head>
 <body>
-  <h1>Professional Street Learn Management System</h1>
+<h1>Professional Meme-Learning Management System</h1>
   <div style="text-align: center;">
     <h2>Login to your account</h2>
     <div class="register-page">
