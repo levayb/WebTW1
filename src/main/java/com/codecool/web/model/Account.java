@@ -2,15 +2,17 @@ package com.codecool.web.model;
 
 import java.io.Serializable;
 import java.sql.*;
+import java.util.Objects;
 
-public class Account implements Serializable {
+public class Account extends AbstractModel {
 
     public final String username;
     public final String password;
-    public boolean isMentor;
     public final String email;
+    public boolean isMentor;
 
-    public Account(String username, String password, boolean isMentor, String email){
+    public Account(int id, String username, String password, String email, boolean isMentor){
+        super(id);
         this.username = username;
         this.password = password;
         this.isMentor = isMentor;
@@ -49,7 +51,22 @@ public class Account implements Serializable {
         }
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Account acc = (Account) o;
+        return Objects.equals(username, acc.username) &&
+                Objects.equals(email, acc.email) &&
+                Objects.equals(password, acc.password) &&
+                Objects.equals(isMentor,acc.isMentor);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), username, email, password, isMentor);
+    }
 
     @Override
     public String toString(){

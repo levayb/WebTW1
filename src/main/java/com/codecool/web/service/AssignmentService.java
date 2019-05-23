@@ -1,67 +1,18 @@
 package com.codecool.web.service;
 
-import com.codecool.web.model.Account;
 import com.codecool.web.model.Assignment;
+import com.codecool.web.service.exception.ServiceException;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
+import java.sql.SQLException;
 import java.util.List;
-import java.sql.*;
 
-public class AssignmentService {
+public interface AssignmentService {
 
-    public List<Assignment> assignments;
-    private static AssignmentService ourInstance = new AssignmentService();
+    List<Assignment> getAssignments() throws SQLException;
 
-    public static AssignmentService getInstance() {
-        return ourInstance;
-    }
+    Assignment getAssignment(String name) throws SQLException, ServiceException;
 
-    private AssignmentService() {
-        assignments = new ArrayList<>();
-    }
+    Assignment add(String name, String imgsrc, String about, String origin, String spread) throws SQLException, ServiceException;
 
-    public List<Assignment> getAssignments(){ return assignments; }
-
-    public void addAssignment(Assignment a){assignments.add(a);}
-
-    public void save() {
-        try {
-            FileOutputStream fout = new FileOutputStream("assignments.ser");
-            ObjectOutputStream oos = new ObjectOutputStream(fout);
-            oos.writeObject(assignments);
-            oos.close();
-            fout.close();
-        } catch (Exception e) {
-        }
-    }
-
-    public void load() {
-        try {
-            FileInputStream fin = new FileInputStream("assignments.ser");
-            ObjectInputStream ois = new ObjectInputStream(fin);
-            assignments = (ArrayList<Assignment>) ois.readObject();
-            ois.close();
-            fin.close();
-        } catch (Exception e) {
-        }
-    }
-
-    public void delete(Assignment a){
-        Assignment deletable = new Assignment("","","About","","Origin","","Spread","");
-        for (Assignment iterated:assignments) {
-            if(iterated.getName().equalsIgnoreCase(a.getName())){
-                deletable.setImgsrc(a.getImgsrc());
-                deletable.setName(a.getName());
-                deletable.setAbout_data(a.getAbout_data());
-                deletable.setOrigin_data(a.getOrigin_data());
-                deletable.setSpread_data(a.getSpread_data());
-            }
-        }if (!deletable.getName().isEmpty()){
-            assignments.remove(deletable);
-        }
-    }
+    void delete(String name) throws SQLException, ServiceException;
 }

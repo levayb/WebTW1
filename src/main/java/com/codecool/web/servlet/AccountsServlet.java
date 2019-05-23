@@ -14,33 +14,23 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
-@WebServlet("/login")
-public final class LoginServlet extends AbstractServlet {
+@WebServlet("/protected/accounts")
+public final class AccountsServlet extends AbstractServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        req.getRequestDispatcher("index.jsp").forward(req,resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        try (Connection connection = getConnection(req.getServletContext())) {
+        try(Connection connection = getConnection(req.getServletContext())){
             AccountDao accountDao = new DatabaseAccountDao(connection);
             AccountService accountService = new SimpleAccountService(accountDao);
-
-            String username = req.getParameter("username");
-            String password = req.getParameter("password");
-
-            Account account = accountService.loginAccount(username, password);
-
-            req.getSession().setAttribute("account", account);
-            resp.sendRedirect("protected/home.jsp");
-        }catch (ServiceException ex){
-            req.setAttribute("error",ex.getMessage());
-            req.getRequestDispatcher("index.jsp").forward(req,resp);
+            List<Account> accounts = accountService.getAccounts();
+            req.setAttribute("accounts",accounts);
+            req.getRequestDispatcher("accounts.jsp").forward(req,resp);
         }catch (SQLException ex){
             throw new ServletException(ex);
+        }catch (ServiceException ex){
+            req.setAttribute("error",ex.getMessage());
         }
     }
 }

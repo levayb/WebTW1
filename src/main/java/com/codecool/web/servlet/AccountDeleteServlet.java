@@ -1,13 +1,17 @@
 package com.codecool.web.servlet;
 
+import com.codecool.web.dao.AccountDao;
 import com.codecool.web.dao.AssignmentDao;
+import com.codecool.web.dao.database.DatabaseAccountDao;
 import com.codecool.web.dao.database.DatabaseAssignmentDao;
+import com.codecool.web.model.Account;
 import com.codecool.web.model.Assignment;
+import com.codecool.web.service.AccountService;
 import com.codecool.web.service.AssignmentService;
 import com.codecool.web.service.exception.ServiceException;
+import com.codecool.web.service.simple.SimpleAccountService;
 import com.codecool.web.service.simple.SimpleAssignmentService;
 
-import javax.net.ssl.HttpsURLConnection;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,29 +20,29 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet("/protected/assignment")
-public final class AssignmentServlet extends AbstractServlet {
+@WebServlet("/protected/accountdelete")
+public final class AccountDeleteServlet extends AbstractServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (Connection connection = getConnection(req.getServletContext())) {
-            AssignmentDao assignmentDao = new DatabaseAssignmentDao(connection);
-            AssignmentService assignmentService = new SimpleAssignmentService(assignmentDao);
+            AccountDao accountDao = new DatabaseAccountDao(connection);
+            AccountService accountService = new SimpleAccountService(accountDao);
 
-            String name = req.getParameter("name");
+            String username = req.getParameter("username");
 
-            Assignment assignment = assignmentService.getAssignment(name);
-            req.setAttribute("assignment", assignment);
+            Account account = accountService.getAccount(username);
+            accountService.delete(account.getUsername());
         } catch (SQLException ex) {
             throw new ServletException(ex);
         } catch (ServiceException ex) {
             req.setAttribute("error", ex.getMessage());
         }
-        req.getRequestDispatcher("assignment.jsp").forward(req, resp);
+        req.getRequestDispatcher("home.jsp").forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         doGet(req,resp);
-        resp.sendRedirect("assignment.jsp");
+        resp.sendRedirect("home.jsp");
     }
 }

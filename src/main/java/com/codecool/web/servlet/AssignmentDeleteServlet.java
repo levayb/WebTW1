@@ -7,7 +7,6 @@ import com.codecool.web.service.AssignmentService;
 import com.codecool.web.service.exception.ServiceException;
 import com.codecool.web.service.simple.SimpleAssignmentService;
 
-import javax.net.ssl.HttpsURLConnection;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,8 +15,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet("/protected/assignment")
-public final class AssignmentServlet extends AbstractServlet {
+@WebServlet("/protected/assignmentdelete")
+public final class AssignmentDeleteServlet extends AbstractServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,17 +27,17 @@ public final class AssignmentServlet extends AbstractServlet {
             String name = req.getParameter("name");
 
             Assignment assignment = assignmentService.getAssignment(name);
-            req.setAttribute("assignment", assignment);
+            assignmentService.delete(assignment.getName());
         } catch (SQLException ex) {
             throw new ServletException(ex);
         } catch (ServiceException ex) {
             req.setAttribute("error", ex.getMessage());
         }
-        req.getRequestDispatcher("assignment.jsp").forward(req, resp);
+        req.getRequestDispatcher("home.jsp").forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         doGet(req,resp);
-        resp.sendRedirect("assignment.jsp");
+        resp.sendRedirect("home.jsp");
     }
 }

@@ -1,68 +1,20 @@
 package com.codecool.web.service;
 
 import com.codecool.web.model.Account;
+import com.codecool.web.service.exception.ServiceException;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
+import java.sql.SQLException;
 import java.util.List;
-import java.sql.*;
 
+public interface AccountService {
 
-public class AccountService {
+    Account loginAccount(String username, String password) throws SQLException, ServiceException;
 
-    private List<Account> accounts;
-    private static AccountService ourInstance = new AccountService();
+    Account add(String username, String password, String email, boolean mentor) throws SQLException, ServiceException;
 
-    public static AccountService getInstance() {
-        return ourInstance;
-    }
+    List<Account> getAccounts() throws SQLException, ServiceException;
 
-    private AccountService() {
-        accounts = new ArrayList<>();
-        accounts.add(new Account("admin","admin",true,"ad@mi.n"));
-    }
+    Account getAccount(String username) throws SQLException, ServiceException;
 
-    public List<Account> getAccounts() {
-        return accounts;
-    }
-
-    public void addAccount(Account acc) {
-        accounts.add(acc);
-    }
-
-    public void save() {
-        try {
-            FileOutputStream fout = new FileOutputStream("accounts.ser");
-            ObjectOutputStream oos = new ObjectOutputStream(fout);
-            oos.writeObject(accounts);
-            oos.close();
-            fout.close();
-        } catch (Exception e) {
-        }
-    }
-
-    public void load() {
-        try {
-            FileInputStream fin = new FileInputStream("accounts.ser");
-            ObjectInputStream ois = new ObjectInputStream(fin);
-            accounts = (ArrayList<Account>) ois.readObject();
-            ois.close();
-            fin.close();
-        } catch (Exception e) {
-        }
-    }
-
-    public void delete(Account acc){
-        Account deletable = new Account("","",false,"");
-        for (Account a:accounts) {
-            if(a.getUsername().equalsIgnoreCase(acc.getUsername())){
-                deletable = a;
-            }
-        }if (!deletable.getUsername().isEmpty()){
-            accounts.remove(deletable);
-        }
-    }
+    void delete(String username) throws SQLException, ServiceException;
 }

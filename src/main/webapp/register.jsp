@@ -1,36 +1,23 @@
-<html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Register</title>
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/brendon.css">
-    <script type="text/javascript" src="brendon/brendon.js"></script>
-</head>
-
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!doctype html>
+<html lang="en">
+<jsp:include page="snippets/head.jsp">
+    <jsp:param name="title" value="Register"/>
+</jsp:include>
 <body>
-  <h1>Register</h1>
-  <div style="text-align: center;">
-    <h2>Create an account</h2>
-    <div class="form">
-      <form class="login-form" action="account" method="post">
-        <br />username:<input type="text" name="username" placeholder="username">
-        <br />password:<input type="password" name="password" placeholder="password">
-        <br />e-mail:<input type="email" name="email" placeholder="email">
-        <br />
-        <select name="selection">
-          <option value="false">student</option>
-          <option value="true">mentor</option>
-        </select>
-          <audio id="audio" src="brendon/brendon.mp3"></audio>
-        <div class="brendon">
-            <img onclick="play()" src="images/brendon.png"/>
-        </div>
-        <br /><input type="submit" value="Submit">
-        <a href="index.jsp">Login here</a>
-      </form>
-    </div>
-  </div>
+<h1>Register</h1>
+<form method="post" action="register">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="text" name="email">
+    <select name="selection">
+      <option value="false">student</option>
+      <option value="true">mentor</option>
+    </select>
+    <input type="submit" value="Register">
+</form>
+<a href="login">Login here</a>
+<jsp:include page="snippets/show-error.jsp"/>
 </body>
-
 </html>
