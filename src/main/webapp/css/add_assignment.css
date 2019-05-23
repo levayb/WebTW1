@@ -62,7 +62,8 @@ h4 {
 
 a {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* A link that has not been visited */

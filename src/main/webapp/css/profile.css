@@ -11,7 +11,7 @@ body {
 }
 
 a {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* A link that has not been visited */
@@ -48,6 +48,7 @@ a:active {
     left: 90%;
     height: 100px;
     width: 133px;
+    font-size: 25px;
 }
 
 .accounts {
@@ -74,3 +75,4 @@ a:active {
 .links_table td {
     font-size: 20px;
 }
+

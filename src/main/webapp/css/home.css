@@ -19,6 +19,7 @@ body {
 }
 
 .table {
+    padding: 40px;
   font-size: 25px;
   margin: auto;
   position: relative;

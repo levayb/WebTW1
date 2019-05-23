@@ -29,10 +29,11 @@ img {
 }
 
 .text {
+    padding: 5px;
     bottom: 10%;
     width: 50%;
-    margin: 0 auto;
-    height: 80%;
+    margin: 100px auto;
+    height: 85%;
     text-align: center;
     position: center;
     background: url("../images/table.png");
