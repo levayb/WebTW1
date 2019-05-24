@@ -6,7 +6,7 @@ a {
 }
 
 body {
-    background: url("../images/background.png") no-repeat 50% 50% fixed;
+    background: url("../../images/background.png") no-repeat 50% 50% fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -36,7 +36,7 @@ img {
     height: 85%;
     text-align: center;
     position: center;
-    background: url("../images/table.png");
+    background: url("../../images/table.png");
     text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
     box-sizing: border-box;
     border-radius: 15px;
@@ -54,6 +54,10 @@ h2 {
 
 p {
     text-align: justify-all;
+}
+
+a {
+    text-align: center;
 }
 
 a:link {

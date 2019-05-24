@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-    background-image: url("../images/background.png");
+    background-image: url("../../images/background.png");
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: white;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+}
+
+h1 {
+    text-align: center;
 }
 
 .links_table2 {
@@ -13,7 +18,7 @@ body {
     color: white;
     text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
     border-spacing: 0;
-    background: url("../images/table.png");
+    background: url("../../images/table.png");
     border-radius: 15px;
     position: relative;
     left: 90%;
@@ -60,7 +65,7 @@ select {
     margin: 200px auto 100px;
     padding: 40px;
     text-align: center;
-    background: url("../images/table.png");
+    background: url("../../images/table.png");
     border-radius: 15px;
     width: 500px;
     text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);

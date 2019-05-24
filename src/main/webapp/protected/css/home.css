@@ -5,7 +5,7 @@ h1 {
 }
 
 body {
-  background: url("../images/background.png") no-repeat 50% 50% fixed;
+    background: url("../../images/background.png") no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,7 +23,7 @@ body {
   font-size: 25px;
   margin: auto;
   position: relative;
-  background: url("../images/table.png");
+    background: url("../../images/table.png");
   border-radius: 15px;
   text-align: center;
   color: white;

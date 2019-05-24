@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-    background: url("../images/background.png") no-repeat 50% 50% fixed;
+    background: url("../../images/background.png") no-repeat 50% 50% fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,9 +14,8 @@ body {
     color: black;
 }
 
-h4 {
-    color: black;
-    font-weight: bold;
+h1 {
+    color: white;
     text-align: center;
 }
 

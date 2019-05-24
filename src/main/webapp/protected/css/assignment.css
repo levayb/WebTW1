@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-    background: url("../images/background.png") no-repeat 50% 50% fixed;
+    background: url("../../images/background.png") no-repeat 50% 50% fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -11,6 +11,34 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 20px;
     color: white;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+a {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center {
+    position: relative;
+    z-index: 1;
+    margin: 200px auto 100px;
+    padding: 40px;
+    text-align: center;
+    background: url("../../images/table.png");
+    border-radius: 15px;
+    width: 500px;
+    text-shadow: -1px -1px 0 rgb(64, 64, 64), 1px -1px 0 rgb(64, 64, 64), -1px 1px 0 rgb(64, 64, 64), 1px 1px 0 rgb(64, 64, 64);
+    border-spacing: 0;
+    height: 200px;
 }
 
 select {
