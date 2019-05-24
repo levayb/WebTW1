@@ -5,6 +5,7 @@
 <jsp:include page="snippets/head.jsp">
     <jsp:param name="title" value="Login"/>
 </jsp:include>
+<link rel="stylesheet" href="/css/login.css">
 <body>
 <h1>Login</h1>
 <form method="post" action="login">

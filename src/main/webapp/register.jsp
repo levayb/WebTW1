@@ -5,6 +5,7 @@
 <jsp:include page="snippets/head.jsp">
     <jsp:param name="title" value="Register"/>
 </jsp:include>
+<link rel="stylesheet" href="/css/register.css">
 <body>
 <h1>Register</h1>
 <form method="post" action="register">
