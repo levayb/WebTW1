@@ -7,13 +7,13 @@
     <jsp:param name="title" value="Assignments"/>
 </jsp:include>
 <body>
-<h1>Assignments</h1>
 <div>
+    <h1>Assignments</h1>
     <table class="center">
         <thead>
         <tr>
             <th>Name</th>
-            <th>Img</th>
+            <th>Picture</th>
         </tr>
         </thead>
         <tbody>
@@ -26,6 +26,7 @@
         </tbody>
     </table>
 </div>
+
 <div class="loader">
     <h2>Read an assignment</h2>
     <form action="assignment" method="post">

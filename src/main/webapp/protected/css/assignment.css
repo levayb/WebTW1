@@ -15,8 +15,8 @@ body {
 }
 
 img {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
 }
 
 a {
@@ -30,8 +30,8 @@ h1 {
 .center {
     position: relative;
     z-index: 1;
-    margin: 200px auto 100px;
-    padding: 40px;
+    margin: 150px auto 100px;
+    padding: 30px;
     text-align: center;
     background: url("../../images/table.png");
     border-radius: 15px;
